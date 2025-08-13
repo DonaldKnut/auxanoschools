@@ -51,45 +51,71 @@ function initHamburgerMenu() {
   );
 
   if (hamburger && navMenu) {
-    // Add click event listener with multiple event types
-    hamburger.addEventListener("click", handleHamburgerClick);
-    hamburger.addEventListener("touchstart", handleHamburgerClick);
+    // Remove any existing event listeners
+    const newHamburger = hamburger.cloneNode(true);
+    hamburger.parentNode.replaceChild(newHamburger, hamburger);
     
+    // Get the new hamburger reference
+    const freshHamburger = document.getElementById("hamburger");
+    const freshNavMenu = document.getElementById("nav-menu");
+
+    // Add multiple event listeners for better compatibility
+    freshHamburger.addEventListener("click", handleHamburgerClick, true);
+    freshHamburger.addEventListener("touchstart", handleHamburgerClick, true);
+    freshHamburger.addEventListener("mousedown", handleHamburgerClick, true);
+    
+    // Also add to the container div
+    freshHamburger.addEventListener("click", handleHamburgerClick, false);
+    freshHamburger.addEventListener("touchstart", handleHamburgerClick, false);
+    freshHamburger.addEventListener("mousedown", handleHamburgerClick, false);
+
     function handleHamburgerClick(e) {
       e.preventDefault();
       e.stopPropagation();
-      console.log("Hamburger clicked!");
+      e.stopImmediatePropagation();
+      
+      console.log("=== Hamburger Click Event ===");
       console.log("Event type:", e.type);
       console.log("Target:", e.target);
+      console.log("Current target:", e.currentTarget);
+      console.log("Event phase:", e.eventPhase);
 
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
+      freshHamburger.classList.toggle("active");
+      freshNavMenu.classList.toggle("active");
+
+      console.log("Hamburger active:", freshHamburger.classList.contains('active'));
+      console.log("Nav menu active:", freshNavMenu.classList.contains('active'));
 
       // Prevent body scroll when menu is open
-      if (navMenu.classList.contains("active")) {
+      if (freshNavMenu.classList.contains("active")) {
         document.body.style.overflow = "hidden";
       } else {
         document.body.style.overflow = "";
       }
+      
+      // Force a repaint
+      freshHamburger.offsetHeight;
     }
 
     // Close menu when clicking on a link
     navLinks.forEach((link) => {
       link.addEventListener("click", function () {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
+        freshHamburger.classList.remove("active");
+        freshNavMenu.classList.remove("active");
         document.body.style.overflow = "";
       });
     });
 
     // Close menu when clicking outside
     document.addEventListener("click", function (e) {
-      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
+      if (!freshHamburger.contains(e.target) && !freshNavMenu.contains(e.target)) {
+        freshHamburger.classList.remove("active");
+        freshNavMenu.classList.remove("active");
         document.body.style.overflow = "";
       }
     });
+    
+    console.log("Hamburger menu initialized with fresh elements");
   } else {
     console.error("Hamburger menu elements not found!");
   }
