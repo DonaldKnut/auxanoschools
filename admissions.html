@@ -21,64 +21,36 @@
     />
   </head>
   <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-      <div class="loading-spinner"></div>
-      <p>Loading Auxano Schools...</p>
-    </div>
-
     <!-- Header -->
     <header class="header" id="header">
       <nav class="nav-container">
         <div class="nav-brand">
-          <svg
-            class="logo"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <circle
-              cx="20"
-              cy="20"
-              r="18"
-              stroke="#22C55E"
-              stroke-width="2"
-              fill="none"
-            />
-            <path
-              d="M12 20L18 26L28 14"
-              stroke="#22C55E"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <text
-              x="20"
-              y="35"
-              text-anchor="middle"
-              font-family="Inter, sans-serif"
-              font-size="8"
-              font-weight="bold"
-              fill="#22C55E"
-            >
-              AUXANO
-            </text>
-          </svg>
+          <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+              <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
           <span class="brand-text">Auxano Schools</span>
         </div>
-
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="academics.html" class="nav-link">Academics</a>
-          <a href="admissions.html" class="nav-link active">Admissions</a>
-          <a href="facilities.html" class="nav-link">Facilities</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="admissions.html" class="nav-link active">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        
         <div class="nav-actions">
-          <button class="btn-primary">Apply Now</button>
+          <a href="admissions.html" class="btn btn-primary">Apply Now</a>
           <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -393,67 +365,6 @@
       <div class="loading-spinner"></div>
       <p>Loading Auxano Schools...</p>
     </div>
-
-    <!-- Header -->
-    <header class="header" id="header">
-      <nav class="nav-container">
-        <div class="nav-brand">
-          <svg
-            class="logo"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <circle
-              cx="20"
-              cy="20"
-              r="18"
-              stroke="#22C55E"
-              stroke-width="2"
-              fill="none"
-            />
-            <path
-              d="M12 20L18 26L28 14"
-              stroke="#22C55E"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <text
-              x="20"
-              y="35"
-              text-anchor="middle"
-              font-family="Inter, sans-serif"
-              font-size="8"
-              font-weight="bold"
-              fill="#22C55E"
-            >
-              AUXANO
-            </text>
-          </svg>
-          <span class="brand-text">Auxano Schools</span>
-        </div>
-
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="academics.html" class="nav-link">Academics</a>
-          <a href="admissions.html" class="nav-link active">Admissions</a>
-          <a href="facilities.html" class="nav-link">Facilities</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-
-        <div class="nav-actions">
-          <button class="btn-primary">Apply Now</button>
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </nav>
-    </header>
 
     <!-- Hero Section -->
     <section class="hero">

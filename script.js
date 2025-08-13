@@ -262,15 +262,26 @@ function initSmoothScrolling() {
 
 // Loading screen
 function initLoadingScreen() {
+  // Check if loading screen already exists
+  const existingLoading = document.querySelector(".loading");
+  if (existingLoading) {
+    existingLoading.remove();
+  }
+
   // Create loading screen
   const loadingScreen = document.createElement("div");
   loadingScreen.className = "loading";
   loadingScreen.innerHTML = `
         <div class="loading-content">
-            <svg class="loading-logo" width="60" height="60" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="18" stroke="#22C55E" stroke-width="2" fill="none"/>
-                <path d="M12 20L18 26L28 14" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <text x="20" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="#22C55E">AUXANO</text>
+            <svg class="loading-logo" width="60" height="60" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="url(#loadingGradient)"/>
+                <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
+                <defs>
+                    <linearGradient id="loadingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
             </svg>
             <div class="loading-spinner"></div>
             <p style="margin-top: 1rem; color: #22C55E; font-weight: 600;">Loading Auxano Schools...</p>
@@ -279,15 +290,26 @@ function initLoadingScreen() {
 
   document.body.appendChild(loadingScreen);
 
-  // Hide loading screen after page loads
-  window.addEventListener("load", function () {
+  // Hide loading screen after page loads or after a maximum time
+  const hideLoading = () => {
     setTimeout(() => {
       loadingScreen.classList.add("hidden");
       setTimeout(() => {
-        loadingScreen.remove();
+        if (loadingScreen.parentNode) {
+          loadingScreen.remove();
+        }
       }, 500);
     }, 1000);
-  });
+  };
+
+  // Try both load event and a fallback timer
+  if (document.readyState === "complete") {
+    hideLoading();
+  } else {
+    window.addEventListener("load", hideLoading);
+    // Fallback: hide loading screen after 3 seconds maximum
+    setTimeout(hideLoading, 3000);
+  }
 }
 
 // Parallax effects
@@ -595,7 +617,3 @@ window.AuxanoSchools = {
   initContactForm,
   initMap,
 };
-
-
-
-

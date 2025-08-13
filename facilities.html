@@ -21,64 +21,66 @@
     />
   </head>
   <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-      <div class="loading-spinner"></div>
-      <p>Loading Auxano Schools...</p>
-    </div>
-
     <!-- Header -->
     <header class="header" id="header">
       <nav class="nav-container">
         <div class="nav-brand">
-          <svg
-            class="logo"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <circle
-              cx="20"
-              cy="20"
-              r="18"
-              stroke="#22C55E"
-              stroke-width="2"
+          <div class="logo">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
               fill="none"
-            />
-            <path
-              d="M12 20L18 26L28 14"
-              stroke="#22C55E"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <text
-              x="20"
-              y="35"
-              text-anchor="middle"
-              font-family="Inter, sans-serif"
-              font-size="8"
-              font-weight="bold"
-              fill="#22C55E"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              AUXANO
-            </text>
-          </svg>
+              <rect width="40" height="40" rx="8" fill="url(#gradient)" />
+              <text
+                x="20"
+                y="26"
+                text-anchor="middle"
+                fill="white"
+                font-family="Arial, sans-serif"
+                font-size="16"
+                font-weight="bold"
+              >
+                A
+              </text>
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #22c55e; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #fbbf24; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
           <span class="brand-text">Auxano Schools</span>
         </div>
 
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="academics.html" class="nav-link">Academics</a>
-          <a href="admissions.html" class="nav-link">Admissions</a>
-          <a href="facilities.html" class="nav-link active">Facilities</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li>
+            <a href="facilities.html" class="nav-link active">Facilities</a>
+          </li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
 
         <div class="nav-actions">
-          <button class="btn-primary">Apply Now</button>
+          <a href="admissions.html" class="btn btn-primary">Apply Now</a>
           <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -431,644 +433,65 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <div class="footer-brand">
-              <svg
-                class="footer-logo"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <circle
-                  cx="20"
-                  cy="20"
-                  r="18"
-                  stroke="#22C55E"
-                  stroke-width="2"
-                  fill="none"
-                />
-                <path
-                  d="M12 20L18 26L28 14"
-                  stroke="#22C55E"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <text
-                  x="20"
-                  y="35"
-                  text-anchor="middle"
-                  font-family="Inter, sans-serif"
-                  font-size="8"
-                  font-weight="bold"
-                  fill="#22C55E"
-                >
-                  AUXANO
-                </text>
-              </svg>
-              <h3>Auxano Schools</h3>
-              <p>Excellence in Education</p>
-            </div>
-            <div class="social-links">
-              <a href="#" class="social-link"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="academics.html">Academics</a></li>
-              <li><a href="admissions.html">Admissions</a></li>
-              <li><a href="facilities.html">Facilities</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Our Facilities</h4>
-            <ul class="footer-links">
-              <li><a href="#classrooms">Smart Classrooms</a></li>
-              <li><a href="#labs">Science Labs</a></li>
-              <li><a href="#library">Digital Library</a></li>
-              <li><a href="#sports">Sports Complex</a></li>
-              <li><a href="#arts">Arts Center</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Contact Info</h4>
-            <div class="contact-info">
-              <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-              <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-              <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
-              <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div class="container">
-            <p>
-              &copy; 2024 Auxano Schools. All rights reserved. | Designed with
-              ❤️ for excellence in education
-            </p>
-            <div class="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Cookie Policy</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Facilities - Auxano Schools</title>
-    <meta
-      name="description"
-      content="Explore our state-of-the-art facilities at Auxano Schools, Yaba, Lagos - from modern classrooms to sports complexes and technology labs."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-      <div class="loading-spinner"></div>
-      <p>Loading Auxano Schools...</p>
-    </div>
-
-    <!-- Header -->
-    <header class="header" id="header">
-      <nav class="nav-container">
-        <div class="nav-brand">
-          <svg
-            class="logo"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <circle
-              cx="20"
-              cy="20"
-              r="18"
-              stroke="#22C55E"
-              stroke-width="2"
-              fill="none"
-            />
-            <path
-              d="M12 20L18 26L28 14"
-              stroke="#22C55E"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <text
-              x="20"
-              y="35"
-              text-anchor="middle"
-              font-family="Inter, sans-serif"
-              font-size="8"
-              font-weight="bold"
-              fill="#22C55E"
-            >
-              AUXANO
-            </text>
-          </svg>
-          <span class="brand-text">Auxano Schools</span>
-        </div>
-
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="academics.html" class="nav-link">Academics</a>
-          <a href="admissions.html" class="nav-link">Admissions</a>
-          <a href="facilities.html" class="nav-link active">Facilities</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-
-        <div class="nav-actions">
-          <button class="btn-primary">Apply Now</button>
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-background">
-        <div class="hero-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-        </div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <span class="title-line">World-Class Facilities</span>
-            <span class="title-line">State-of-the-Art Infrastructure</span>
-          </h1>
-          <p class="hero-subtitle">
-            State-of-the-art infrastructure designed to provide the best
-            learning environment for our students.
-          </p>
-          <div class="hero-actions">
-            <a href="#facilities" class="btn btn-primary">Explore Facilities</a>
-            <a href="contact.html" class="btn btn-secondary">Schedule a Tour</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-container">
-            <div class="hero-image-placeholder">
-              <div class="placeholder-icon">🏫</div>
-              <p>School Facilities</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-      </div>
-    </section>
-
-    <!-- Facilities Overview -->
-    <section id="facilities" class="section facilities-overview">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Facilities</h2>
-          <p class="section-subtitle">
-            Modern infrastructure that supports academic excellence and holistic
-            development
-          </p>
-        </div>
-
-        <div class="facilities-grid">
-          <!-- Classrooms -->
-          <div class="facility-card" data-aos="fade-up">
-            <div class="facility-icon">📚</div>
-            <h3>Smart Classrooms</h3>
-            <p>
-              Air-conditioned classrooms equipped with interactive whiteboards,
-              projectors, and digital learning tools.
-            </p>
-            <ul class="facility-features">
-              <li>Interactive whiteboards</li>
-              <li>Projection systems</li>
-              <li>Climate control</li>
-              <li>Ergonomic furniture</li>
-            </ul>
-            <div class="facility-stats">
-              <div class="stat">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Classrooms</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">25</span>
-                <span class="stat-label">Max Capacity</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Science Labs -->
-          <div class="facility-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="facility-icon">🔬</div>
-            <h3>Science Laboratories</h3>
-            <p>
-              Fully equipped physics, chemistry, and biology labs with modern
-              equipment and safety protocols.
-            </p>
-            <ul class="facility-features">
-              <li>Physics lab</li>
-              <li>Chemistry lab</li>
-              <li>Biology lab</li>
-              <li>Safety equipment</li>
-            </ul>
-            <div class="facility-stats">
-              <div class="stat">
-                <span class="stat-number">3</span>
-                <span class="stat-label">Specialized Labs</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">30</span>
-                <span class="stat-label">Workstations</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Computer Lab -->
-          <div class="facility-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="facility-icon">💻</div>
-            <h3>Computer & Technology Lab</h3>
-            <p>
-              Modern computer lab with high-speed internet, coding stations, and
-              multimedia equipment.
-            </p>
-            <ul class="facility-features">
-              <li>High-end computers</li>
-              <li>Programming software</li>
-              <li>3D printing</li>
-              <li>Robotics kits</li>
-            </ul>
-            <div class="facility-stats">
-              <div class="stat">
-                <span class="stat-number">40</span>
-                <span class="stat-label">Computers</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">1Gbps</span>
-                <span class="stat-label">Internet Speed</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Library -->
-          <div class="facility-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="facility-icon">📖</div>
-            <h3>Digital Library</h3>
-            <p>
-              Comprehensive library with physical books, e-books, research
-              databases, and study spaces.
-            </p>
-            <ul class="facility-features">
-              <li>Physical books</li>
-              <li>E-book access</li>
-              <li>Research databases</li>
-              <li>Study rooms</li>
-            </ul>
-            <div class="facility-stats">
-              <div class="stat">
-                <span class="stat-number">10,000+</span>
-                <span class="stat-label">Books</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">50</span>
-                <span class="stat-label">Study Spaces</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Sports Facilities -->
-          <div class="facility-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="facility-icon">⚽</div>
-            <h3>Sports Complex</h3>
-            <p>
-              Multi-purpose sports facilities including football field,
-              basketball court, and indoor sports hall.
-            </p>
-            <ul class="facility-features">
-              <li>Football field</li>
-              <li>Basketball court</li>
-              <li>Indoor sports hall</li>
-              <li>Swimming pool</li>
-            </ul>
-            <div class="facility-stats">
-              <div class="stat">
-                <span class="stat-number">5</span>
-                <span class="stat-label">Sports Areas</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">500</span>
-                <span class="stat-label">Spectator Capacity</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Arts Center -->
-          <div class="facility-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="facility-icon">🎨</div>
-            <h3>Arts & Music Center</h3>
-            <p>
-              Dedicated spaces for visual arts, music, drama, and creative
-              expression.
-            </p>
-            <ul class="facility-features">
-              <li>Art studio</li>
-              <li>Music rooms</li>
-              <li>Drama theater</li>
-              <li>Recording studio</li>
-            </ul>
-            <div class="facility-stats">
-              <div class="stat">
-                <span class="stat-number">4</span>
-                <span class="stat-label">Creative Spaces</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">200</span>
-                <span class="stat-label">Auditorium Seats</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Campus Tour -->
-    <section class="section campus-tour">
-      <div class="container">
-        <div class="campus-content">
-          <div class="campus-text" data-aos="fade-right">
-            <h2>Campus Tour</h2>
-            <p>
-              Our 15-acre campus in Yaba, Lagos provides a serene and conducive
-              environment for learning. Take a virtual tour of our world-class
-              facilities.
-            </p>
-
-            <div class="campus-highlights">
-              <div class="highlight">
-                <span class="highlight-icon">🌳</span>
-                <div>
-                  <h4>Green Campus</h4>
-                  <p>
-                    Lush gardens and open spaces for outdoor learning and
-                    recreation.
-                  </p>
-                </div>
-              </div>
-              <div class="highlight">
-                <span class="highlight-icon">🔒</span>
-                <div>
-                  <h4>Security</h4>
-                  <p>
-                    24/7 security with CCTV surveillance and controlled access.
-                  </p>
-                </div>
-              </div>
-              <div class="highlight">
-                <span class="highlight-icon">🚌</span>
-                <div>
-                  <h4>Transportation</h4>
-                  <p>School bus service covering major areas in Lagos.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="campus-image" data-aos="fade-left">
-            <div class="image-placeholder">
-              <div class="placeholder-icon">🏛️</div>
-              <p>Campus Aerial View</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Additional Facilities -->
-    <section class="section additional-facilities">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Additional Amenities</h2>
-          <p class="section-subtitle">
-            Supporting facilities that enhance the learning experience
-          </p>
-        </div>
-
-        <div class="amenities-grid">
-          <div class="amenity-item" data-aos="zoom-in">
-            <div class="amenity-icon">🏥</div>
-            <h3>Health Center</h3>
-            <p>
-              On-site medical facility with qualified nurses and first aid
-              services.
-            </p>
-          </div>
-
-          <div class="amenity-item" data-aos="zoom-in" data-aos-delay="100">
-            <div class="amenity-icon">🍽️</div>
-            <h3>Cafeteria</h3>
-            <p>
-              Modern cafeteria serving nutritious meals and snacks throughout
-              the day.
-            </p>
-          </div>
-
-          <div class="amenity-item" data-aos="zoom-in" data-aos-delay="200">
-            <div class="amenity-icon">🚌</div>
-            <h3>Transportation</h3>
-            <p>Fleet of school buses with GPS tracking and safety features.</p>
-          </div>
-
-          <div class="amenity-item" data-aos="zoom-in" data-aos-delay="300">
-            <div class="amenity-icon">🔋</div>
-            <h3>Power Backup</h3>
-            <p>Uninterrupted power supply with generators and solar panels.</p>
-          </div>
-
-          <div class="amenity-item" data-aos="zoom-in" data-aos-delay="400">
-            <div class="amenity-icon">💧</div>
-            <h3>Water Supply</h3>
-            <p>
-              Clean water supply with filtration systems and borehole backup.
-            </p>
-          </div>
-
-          <div class="amenity-item" data-aos="zoom-in" data-aos-delay="500">
-            <div class="amenity-icon">📶</div>
-            <h3>WiFi Coverage</h3>
-            <p>
-              High-speed wireless internet throughout the campus with content
-              filtering.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="section cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Experience Our Facilities Firsthand</h2>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Auxano Schools</h3>
           <p>
-            Schedule a campus tour to see our world-class facilities and
-            discover how they support academic excellence.
+            Nurturing excellence and building futures through quality education
+            in Yaba, Lagos.
           </p>
-          <div class="cta-actions">
-            <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
-            <a href="contact.html" class="btn btn-secondary"
-              >Request Information</a
-            >
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Facilities</h4>
+          <ul class="footer-links">
+            <li><a href="#classrooms">Smart Classrooms</a></li>
+            <li><a href="#labs">Science Labs</a></li>
+            <li><a href="#library">Digital Library</a></li>
+            <li><a href="#sports">Sports Complex</a></li>
+            <li><a href="#arts">Arts Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
+            <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <div class="footer-brand">
-              <svg
-                class="footer-logo"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <circle
-                  cx="20"
-                  cy="20"
-                  r="18"
-                  stroke="#22C55E"
-                  stroke-width="2"
-                  fill="none"
-                />
-                <path
-                  d="M12 20L18 26L28 14"
-                  stroke="#22C55E"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <text
-                  x="20"
-                  y="35"
-                  text-anchor="middle"
-                  font-family="Inter, sans-serif"
-                  font-size="8"
-                  font-weight="bold"
-                  fill="#22C55E"
-                >
-                  AUXANO
-                </text>
-              </svg>
-              <h3>Auxano Schools</h3>
-              <p>Excellence in Education</p>
-            </div>
-            <div class="social-links">
-              <a href="#" class="social-link"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="academics.html">Academics</a></li>
-              <li><a href="admissions.html">Admissions</a></li>
-              <li><a href="facilities.html">Facilities</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Our Facilities</h4>
-            <ul class="footer-links">
-              <li><a href="#classrooms">Smart Classrooms</a></li>
-              <li><a href="#labs">Science Labs</a></li>
-              <li><a href="#library">Digital Library</a></li>
-              <li><a href="#sports">Sports Complex</a></li>
-              <li><a href="#arts">Arts Center</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Contact Info</h4>
-            <div class="contact-info">
-              <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-              <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-              <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
-              <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div class="container">
-            <p>
-              &copy; 2024 Auxano Schools. All rights reserved. | Designed with
-              ❤️ for excellence in education
-            </p>
-            <div class="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Cookie Policy</a>
-            </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 Auxano Schools. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
           </div>
         </div>
       </div>
@@ -1077,4 +500,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
