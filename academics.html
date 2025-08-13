@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Programs - Auxano Schools</title>
+    <meta
+      name="description"
+      content="Explore our comprehensive academic programs from Early Years to Senior Secondary at Auxano Schools, Yaba, Lagos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading-spinner"></div>
+      <p>Loading Auxano Schools...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav-container">
+        <div class="nav-brand">
+          <svg
+            class="logo"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <circle
+              cx="20"
+              cy="20"
+              r="18"
+              stroke="#22C55E"
+              stroke-width="2"
+              fill="none"
+            />
+            <path
+              d="M12 20L18 26L28 14"
+              stroke="#22C55E"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <text
+              x="20"
+              y="35"
+              text-anchor="middle"
+              font-family="Inter, sans-serif"
+              font-size="8"
+              font-weight="bold"
+              fill="#22C55E"
+            >
+              AUXANO
+            </text>
+          </svg>
+          <span class="brand-text">Auxano Schools</span>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="academics.html" class="nav-link active">Academics</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="facilities.html" class="nav-link">Facilities</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn-primary">Apply Now</button>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Academic Excellence</span>
+            <span class="title-line">Comprehensive Education</span>
+          </h1>
+          <p class="hero-subtitle">
+            Comprehensive education from Early Years to Senior Secondary,
+            preparing students for success in a global world.
+          </p>
+          <div class="hero-actions">
+            <a href="#programs" class="btn btn-primary">Explore Programs</a>
+            <a href="contact.html" class="btn btn-secondary"
+              >Schedule a Visit</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <div class="hero-image-placeholder">
+              <div class="placeholder-icon">📚</div>
+              <p>Academic Programs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Academic Programs -->
+    <section id="programs" class="section programs-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Academic Programs</h2>
+          <p class="section-subtitle">
+            A comprehensive curriculum designed to nurture intellectual growth
+            and character development
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Early Years -->
+          <div class="program-card" data-aos="fade-up">
+            <div class="program-icon">👶</div>
+            <h3>Early Years (Ages 2-5)</h3>
+            <p>
+              Foundation years focusing on play-based learning, social skills,
+              and early literacy development.
+            </p>
+            <ul class="program-features">
+              <li>Play-based curriculum</li>
+              <li>Early literacy & numeracy</li>
+              <li>Social & emotional development</li>
+              <li>Creative arts & music</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:8</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Primary School -->
+          <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="program-icon">🎒</div>
+            <h3>Primary School (Ages 6-11)</h3>
+            <p>
+              Comprehensive primary education with focus on core subjects,
+              critical thinking, and character building.
+            </p>
+            <ul class="program-features">
+              <li>Core subjects (Math, English, Science)</li>
+              <li>Social studies & humanities</li>
+              <li>Physical education & sports</li>
+              <li>Technology integration</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:12</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">20</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Junior Secondary -->
+          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="program-icon">🔬</div>
+            <h3>Junior Secondary (Ages 12-14)</h3>
+            <p>
+              Specialized education preparing students for senior secondary with
+              advanced subjects and career exploration.
+            </p>
+            <ul class="program-features">
+              <li>Advanced mathematics & sciences</li>
+              <li>Literature & creative writing</li>
+              <li>Computer science & coding</li>
+              <li>Career guidance & counseling</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:15</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">25</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Secondary -->
+          <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="program-icon">🎓</div>
+            <h3>Senior Secondary (Ages 15-17)</h3>
+            <p>
+              University preparation with specialized tracks in Sciences, Arts,
+              and Business, including international curricula.
+            </p>
+            <ul class="program-features">
+              <li>WAEC & NECO preparation</li>
+              <li>IGCSE & A-Level options</li>
+              <li>University counseling</li>
+              <li>Leadership development</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:18</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">30</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum Highlights -->
+    <section class="section curriculum-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Curriculum Highlights</h2>
+          <p class="section-subtitle">
+            Our innovative approach to education combines traditional excellence
+            with modern methodologies
+          </p>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="curriculum-item" data-aos="fade-right">
+            <div class="curriculum-icon">🌍</div>
+            <h3>Global Perspective</h3>
+            <p>
+              International curriculum standards with local cultural
+              integration, preparing students for global citizenship.
+            </p>
+          </div>
+
+          <div class="curriculum-item" data-aos="fade-left">
+            <div class="curriculum-icon">💻</div>
+            <h3>Technology Integration</h3>
+            <p>
+              Digital literacy and coding from early years, with smart
+              classrooms and online learning platforms.
+            </p>
+          </div>
+
+          <div class="curriculum-item" data-aos="fade-right">
+            <div class="curriculum-icon">🎨</div>
+            <h3>Creative Arts</h3>
+            <p>
+              Comprehensive arts program including visual arts, music, drama,
+              and creative writing to foster imagination.
+            </p>
+          </div>
+
+          <div class="curriculum-item" data-aos="fade-left">
+            <div class="curriculum-icon">🏃</div>
+            <h3>Physical Development</h3>
+            <p>
+              Sports, physical education, and wellness programs promoting
+              healthy lifestyle and team spirit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Excellence -->
+    <section class="section excellence-section">
+      <div class="container">
+        <div class="excellence-content">
+          <div class="excellence-text" data-aos="fade-right">
+            <h2>Academic Excellence</h2>
+            <p>
+              Our students consistently achieve outstanding results in national
+              and international examinations, with 95% of our graduates gaining
+              admission to top universities worldwide.
+            </p>
+
+            <div class="achievement-stats">
+              <div class="achievement-stat">
+                <span class="achievement-number">95%</span>
+                <span class="achievement-label">University Admission Rate</span>
+              </div>
+              <div class="achievement-stat">
+                <span class="achievement-number">98%</span>
+                <span class="achievement-label">WAEC Pass Rate</span>
+              </div>
+              <div class="achievement-stat">
+                <span class="achievement-number">85%</span>
+                <span class="achievement-label">A's in Core Subjects</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="excellence-image" data-aos="fade-left">
+            <div class="image-placeholder">
+              <div class="placeholder-icon">🏆</div>
+              <p>Academic Achievements</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Join Our Academic Community?</h2>
+          <p>
+            Discover how Auxano Schools can provide your child with an
+            exceptional education that prepares them for future success.
+          </p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
+            <a href="contact.html" class="btn btn-secondary"
+              >Download Prospectus</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-brand">
+              <svg
+                class="footer-logo"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  stroke="#22C55E"
+                  stroke-width="2"
+                  fill="none"
+                />
+                <path
+                  d="M12 20L18 26L28 14"
+                  stroke="#22C55E"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <text
+                  x="20"
+                  y="35"
+                  text-anchor="middle"
+                  font-family="Inter, sans-serif"
+                  font-size="8"
+                  font-weight="bold"
+                  fill="#22C55E"
+                >
+                  AUXANO
+                </text>
+              </svg>
+              <h3>Auxano Schools</h3>
+              <p>Excellence in Education</p>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Academic Programs</h4>
+            <ul class="footer-links">
+              <li><a href="#early-years">Early Years</a></li>
+              <li><a href="#primary">Primary School</a></li>
+              <li><a href="#junior">Junior Secondary</a></li>
+              <li><a href="#senior">Senior Secondary</a></li>
+              <li><a href="#international">International Programs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
+              <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+              <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
+              <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p>
+              &copy; 2024 Auxano Schools. All rights reserved. | Designed with
+              ❤️ for excellence in education
+            </p>
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Programs - Auxano Schools</title>
+    <meta
+      name="description"
+      content="Explore our comprehensive academic programs from Early Years to Senior Secondary at Auxano Schools, Yaba, Lagos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading-spinner"></div>
+      <p>Loading Auxano Schools...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav-container">
+        <div class="nav-brand">
+          <svg
+            class="logo"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <circle
+              cx="20"
+              cy="20"
+              r="18"
+              stroke="#22C55E"
+              stroke-width="2"
+              fill="none"
+            />
+            <path
+              d="M12 20L18 26L28 14"
+              stroke="#22C55E"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <text
+              x="20"
+              y="35"
+              text-anchor="middle"
+              font-family="Inter, sans-serif"
+              font-size="8"
+              font-weight="bold"
+              fill="#22C55E"
+            >
+              AUXANO
+            </text>
+          </svg>
+          <span class="brand-text">Auxano Schools</span>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="academics.html" class="nav-link active">Academics</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="facilities.html" class="nav-link">Facilities</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn-primary">Apply Now</button>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Academic Excellence</span>
+            <span class="title-line">Comprehensive Education</span>
+          </h1>
+          <p class="hero-subtitle">
+            Comprehensive education from Early Years to Senior Secondary,
+            preparing students for success in a global world.
+          </p>
+          <div class="hero-actions">
+            <a href="#programs" class="btn btn-primary">Explore Programs</a>
+            <a href="contact.html" class="btn btn-secondary"
+              >Schedule a Visit</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <div class="hero-image-placeholder">
+              <div class="placeholder-icon">📚</div>
+              <p>Academic Programs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Academic Programs -->
+    <section id="programs" class="section programs-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Academic Programs</h2>
+          <p class="section-subtitle">
+            A comprehensive curriculum designed to nurture intellectual growth
+            and character development
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Early Years -->
+          <div class="program-card" data-aos="fade-up">
+            <div class="program-icon">👶</div>
+            <h3>Early Years (Ages 2-5)</h3>
+            <p>
+              Foundation years focusing on play-based learning, social skills,
+              and early literacy development.
+            </p>
+            <ul class="program-features">
+              <li>Play-based curriculum</li>
+              <li>Early literacy & numeracy</li>
+              <li>Social & emotional development</li>
+              <li>Creative arts & music</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:8</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Primary School -->
+          <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="program-icon">🎒</div>
+            <h3>Primary School (Ages 6-11)</h3>
+            <p>
+              Comprehensive primary education with focus on core subjects,
+              critical thinking, and character building.
+            </p>
+            <ul class="program-features">
+              <li>Core subjects (Math, English, Science)</li>
+              <li>Social studies & humanities</li>
+              <li>Physical education & sports</li>
+              <li>Technology integration</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:12</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">20</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Junior Secondary -->
+          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="program-icon">🔬</div>
+            <h3>Junior Secondary (Ages 12-14)</h3>
+            <p>
+              Specialized education preparing students for senior secondary with
+              advanced subjects and career exploration.
+            </p>
+            <ul class="program-features">
+              <li>Advanced mathematics & sciences</li>
+              <li>Literature & creative writing</li>
+              <li>Computer science & coding</li>
+              <li>Career guidance & counseling</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:15</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">25</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Secondary -->
+          <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="program-icon">🎓</div>
+            <h3>Senior Secondary (Ages 15-17)</h3>
+            <p>
+              University preparation with specialized tracks in Sciences, Arts,
+              and Business, including international curricula.
+            </p>
+            <ul class="program-features">
+              <li>WAEC & NECO preparation</li>
+              <li>IGCSE & A-Level options</li>
+              <li>University counseling</li>
+              <li>Leadership development</li>
+            </ul>
+            <div class="program-stats">
+              <div class="stat">
+                <span class="stat-number">1:18</span>
+                <span class="stat-label">Teacher Ratio</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">30</span>
+                <span class="stat-label">Max Class Size</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum Highlights -->
+    <section class="section curriculum-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Curriculum Highlights</h2>
+          <p class="section-subtitle">
+            Our innovative approach to education combines traditional excellence
+            with modern methodologies
+          </p>
+        </div>
+
+        <div class="curriculum-grid">
+          <div class="curriculum-item" data-aos="fade-right">
+            <div class="curriculum-icon">🌍</div>
+            <h3>Global Perspective</h3>
+            <p>
+              International curriculum standards with local cultural
+              integration, preparing students for global citizenship.
+            </p>
+          </div>
+
+          <div class="curriculum-item" data-aos="fade-left">
+            <div class="curriculum-icon">💻</div>
+            <h3>Technology Integration</h3>
+            <p>
+              Digital literacy and coding from early years, with smart
+              classrooms and online learning platforms.
+            </p>
+          </div>
+
+          <div class="curriculum-item" data-aos="fade-right">
+            <div class="curriculum-icon">🎨</div>
+            <h3>Creative Arts</h3>
+            <p>
+              Comprehensive arts program including visual arts, music, drama,
+              and creative writing to foster imagination.
+            </p>
+          </div>
+
+          <div class="curriculum-item" data-aos="fade-left">
+            <div class="curriculum-icon">🏃</div>
+            <h3>Physical Development</h3>
+            <p>
+              Sports, physical education, and wellness programs promoting
+              healthy lifestyle and team spirit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Excellence -->
+    <section class="section excellence-section">
+      <div class="container">
+        <div class="excellence-content">
+          <div class="excellence-text" data-aos="fade-right">
+            <h2>Academic Excellence</h2>
+            <p>
+              Our students consistently achieve outstanding results in national
+              and international examinations, with 95% of our graduates gaining
+              admission to top universities worldwide.
+            </p>
+
+            <div class="achievement-stats">
+              <div class="achievement-stat">
+                <span class="achievement-number">95%</span>
+                <span class="achievement-label">University Admission Rate</span>
+              </div>
+              <div class="achievement-stat">
+                <span class="achievement-number">98%</span>
+                <span class="achievement-label">WAEC Pass Rate</span>
+              </div>
+              <div class="achievement-stat">
+                <span class="achievement-number">85%</span>
+                <span class="achievement-label">A's in Core Subjects</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="excellence-image" data-aos="fade-left">
+            <div class="image-placeholder">
+              <div class="placeholder-icon">🏆</div>
+              <p>Academic Achievements</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Join Our Academic Community?</h2>
+          <p>
+            Discover how Auxano Schools can provide your child with an
+            exceptional education that prepares them for future success.
+          </p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
+            <a href="contact.html" class="btn btn-secondary"
+              >Download Prospectus</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-brand">
+              <svg
+                class="footer-logo"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  stroke="#22C55E"
+                  stroke-width="2"
+                  fill="none"
+                />
+                <path
+                  d="M12 20L18 26L28 14"
+                  stroke="#22C55E"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <text
+                  x="20"
+                  y="35"
+                  text-anchor="middle"
+                  font-family="Inter, sans-serif"
+                  font-size="8"
+                  font-weight="bold"
+                  fill="#22C55E"
+                >
+                  AUXANO
+                </text>
+              </svg>
+              <h3>Auxano Schools</h3>
+              <p>Excellence in Education</p>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Academic Programs</h4>
+            <ul class="footer-links">
+              <li><a href="#early-years">Early Years</a></li>
+              <li><a href="#primary">Primary School</a></li>
+              <li><a href="#junior">Junior Secondary</a></li>
+              <li><a href="#senior">Senior Secondary</a></li>
+              <li><a href="#international">International Programs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
+              <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+              <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
+              <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p>
+              &copy; 2024 Auxano Schools. All rights reserved. | Designed with
+              ❤️ for excellence in education
+            </p>
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
