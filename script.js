@@ -43,14 +43,19 @@ function initHamburgerMenu() {
   const navMenu = document.getElementById("nav-menu");
   const navLinks = document.querySelectorAll(".nav-link");
 
-  console.log("Hamburger menu init - hamburger:", hamburger, "navMenu:", navMenu);
+  console.log(
+    "Hamburger menu init - hamburger:",
+    hamburger,
+    "navMenu:",
+    navMenu
+  );
 
   if (hamburger && navMenu) {
     hamburger.addEventListener("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
       console.log("Hamburger clicked!");
-      
+
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
 
