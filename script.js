@@ -54,16 +54,19 @@ function initHamburgerMenu() {
     // Remove any existing event listeners
     const newHamburger = hamburger.cloneNode(true);
     hamburger.parentNode.replaceChild(newHamburger, hamburger);
-    
+
     // Get the new hamburger reference
     const freshHamburger = document.getElementById("hamburger");
     const freshNavMenu = document.getElementById("nav-menu");
+    
+    // Flag to prevent immediate closing
+    let isToggling = false;
 
     // Add multiple event listeners for better compatibility
     freshHamburger.addEventListener("click", handleHamburgerClick, true);
     freshHamburger.addEventListener("touchstart", handleHamburgerClick, true);
     freshHamburger.addEventListener("mousedown", handleHamburgerClick, true);
-    
+
     // Also add to the container div
     freshHamburger.addEventListener("click", handleHamburgerClick, false);
     freshHamburger.addEventListener("touchstart", handleHamburgerClick, false);
@@ -73,28 +76,48 @@ function initHamburgerMenu() {
       e.preventDefault();
       e.stopPropagation();
       e.stopImmediatePropagation();
-      
+
+      // Prevent multiple rapid clicks
+      if (isToggling) return;
+      isToggling = true;
+
       console.log("=== Hamburger Click Event ===");
       console.log("Event type:", e.type);
       console.log("Target:", e.target);
       console.log("Current target:", e.currentTarget);
       console.log("Event phase:", e.eventPhase);
 
-      freshHamburger.classList.toggle("active");
-      freshNavMenu.classList.toggle("active");
-
-      console.log("Hamburger active:", freshHamburger.classList.contains('active'));
-      console.log("Nav menu active:", freshNavMenu.classList.contains('active'));
-
-      // Prevent body scroll when menu is open
-      if (freshNavMenu.classList.contains("active")) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "";
-      }
+      // Toggle menu state
+      const isActive = freshNavMenu.classList.contains("active");
       
+      if (isActive) {
+        // Closing menu
+        freshHamburger.classList.remove("active");
+        freshNavMenu.classList.remove("active");
+        document.body.style.overflow = "";
+      } else {
+        // Opening menu
+        freshHamburger.classList.add("active");
+        freshNavMenu.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      console.log(
+        "Hamburger active:",
+        freshHamburger.classList.contains("active")
+      );
+      console.log(
+        "Nav menu active:",
+        freshNavMenu.classList.contains("active")
+      );
+
       // Force a repaint
       freshHamburger.offsetHeight;
+      
+      // Reset flag after a short delay
+      setTimeout(() => {
+        isToggling = false;
+      }, 300);
     }
 
     // Close menu when clicking on a link
@@ -106,15 +129,20 @@ function initHamburgerMenu() {
       });
     });
 
-    // Close menu when clicking outside
+    // Close menu when clicking outside - but only if menu is open
     document.addEventListener("click", function (e) {
-      if (!freshHamburger.contains(e.target) && !freshNavMenu.contains(e.target)) {
+      if (
+        !isToggling &&
+        freshNavMenu.classList.contains("active") &&
+        !freshHamburger.contains(e.target) &&
+        !freshNavMenu.contains(e.target)
+      ) {
         freshHamburger.classList.remove("active");
         freshNavMenu.classList.remove("active");
         document.body.style.overflow = "";
       }
     });
-    
+
     console.log("Hamburger menu initialized with fresh elements");
   } else {
     console.error("Hamburger menu elements not found!");
