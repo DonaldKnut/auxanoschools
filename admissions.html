@@ -1,647 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admissions - Auxano Schools</title>
-    <meta
-      name="description"
-      content="Apply to Auxano Schools - Premier educational institution in Yaba, Lagos. Learn about our admission process, requirements, and how to apply."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
+    <meta name="description" content="Apply to Auxano Schools - Premier educational institution in Yaba, Lagos. Learn about our admission process, requirements, and how to apply.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
     <!-- Header -->
     <header class="header" id="header">
-      <nav class="nav-container">
-        <div class="nav-brand">
-          <div class="logo">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
-              <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
-              <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <span class="brand-text">Auxano Schools</span>
-        </div>
-        
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="academics.html" class="nav-link">Academics</a></li>
-          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
-          <li><a href="admissions.html" class="nav-link active">Admissions</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        
-        <div class="nav-actions">
-          <a href="admissions.html" class="btn btn-primary">Apply Now</a>
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </nav>
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+                        <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="brand-text">Auxano Schools</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="academics.html" class="nav-link">Academics</a></li>
+                <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+                <li><a href="admissions.html" class="nav-link active">Admissions</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background">
-        <div class="hero-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-        </div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <span class="title-line">Join Our Community</span>
-            <span class="title-line">Begin Your Journey</span>
-          </h1>
-          <p class="hero-subtitle">
-            Discover how to become part of Auxano Schools and start your child's
-            educational journey with us.
-          </p>
-          <div class="hero-actions">
-            <a href="#admission-process" class="btn btn-primary">Learn More</a>
-            <a href="contact.html" class="btn btn-secondary">Apply Now</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-container">
-            <div class="hero-image-placeholder">
-              <div class="placeholder-icon">🎓</div>
-              <p>Admissions</p>
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-      </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Join Our Community</span>
+                    <span class="title-line">Begin Your Journey</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Discover how to become part of Auxano Schools and start your child's educational journey with us.
+                </p>
+                <div class="hero-actions">
+                    <a href="#admission-process" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-secondary">Apply Now</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image-placeholder">
+                        <div class="placeholder-icon">🎓</div>
+                        <p>Admissions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
 
     <!-- Admission Process -->
     <section id="admission-process" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Admission Process</h2>
-          <p class="section-subtitle">
-            A simple and transparent process to join our educational community
-          </p>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Admission Process</h2>
+                <p class="section-subtitle">
+                    A simple and transparent process to join our educational community
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <h3>Inquiry & Application</h3>
+                    <p>
+                        Submit an inquiry form and complete the online application with required documents.
+                    </p>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <h3>Assessment</h3>
+                    <p>
+                        Students undergo age-appropriate assessments to determine their current academic level.
+                    </p>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <h3>Interview</h3>
+                    <p>
+                        Family interview to discuss educational goals and ensure alignment with our values.
+                    </p>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <h3>Enrollment</h3>
+                    <p>
+                        Complete enrollment process and prepare for an exciting educational journey.
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <div class="process-grid">
-          <div class="process-step" data-aos="fade-up">
-            <div class="step-number">1</div>
-            <h3>Inquiry & Application</h3>
-            <p>
-              Submit an inquiry form and complete the online application with
-              required documents.
-            </p>
-          </div>
-
-          <div class="process-step" data-aos="fade-up" data-aos-delay="100">
-            <div class="step-number">2</div>
-            <h3>Assessment</h3>
-            <p>
-              Students undergo age-appropriate assessments to determine their
-              current academic level.
-            </p>
-          </div>
-
-          <div class="process-step" data-aos="fade-up" data-aos-delay="200">
-            <div class="step-number">3</div>
-            <h3>Interview</h3>
-            <p>
-              Family interview to discuss educational goals and ensure alignment
-              with our values.
-            </p>
-          </div>
-
-          <div class="process-step" data-aos="fade-up" data-aos-delay="300">
-            <div class="step-number">4</div>
-            <h3>Acceptance</h3>
-            <p>
-              Successful applicants receive admission offers and enrollment
-              instructions.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Requirements -->
-    <section class="section requirements-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Admission Requirements</h2>
-          <p class="section-subtitle">
-            What you need to prepare for a successful application
-          </p>
+    <!-- Requirements Section -->
+    <section id="requirements" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Admission Requirements</h2>
+                <p class="section-subtitle">
+                    Essential documents and criteria for admission to Auxano Schools
+                </p>
+            </div>
+
+            <div class="requirements-grid">
+                <div class="requirement-card" data-aos="fade-up">
+                    <div class="requirement-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Application Form</h3>
+                    <p>Completed application form with accurate information</p>
+                </div>
+
+                <div class="requirement-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="requirement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Academic Records</h3>
+                    <p>Previous school records and transcripts</p>
+                </div>
+
+                <div class="requirement-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="requirement-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Birth Certificate</h3>
+                    <p>Official birth certificate or passport</p>
+                </div>
+
+                <div class="requirement-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="requirement-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Passport Photos</h3>
+                    <p>Recent passport-sized photographs</p>
+                </div>
+
+                <div class="requirement-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="requirement-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Medical Records</h3>
+                    <p>Immunization records and health information</p>
+                </div>
+
+                <div class="requirement-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="requirement-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Application Fee</h3>
+                    <p>Non-refundable application processing fee</p>
+                </div>
+            </div>
         </div>
-
-        <div class="requirements-grid">
-          <div class="requirement-card" data-aos="fade-up">
-            <div class="requirement-icon">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <h3>Application Form</h3>
-            <p>Completed application form with all required information.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="requirement-icon">
-              <i class="fas fa-birthday-cake"></i>
-            </div>
-            <h3>Birth Certificate</h3>
-            <p>Original birth certificate or certified copy.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="requirement-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>Academic Records</h3>
-            <p>Previous school records and transcripts (if applicable).</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="requirement-icon">
-              <i class="fas fa-user-md"></i>
-            </div>
-            <h3>Medical Records</h3>
-            <p>Immunization records and medical history.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="requirement-icon">
-              <i class="fas fa-camera"></i>
-            </div>
-            <h3>Passport Photos</h3>
-            <p>Recent passport-sized photographs of the student.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="requirement-icon">
-              <i class="fas fa-money-bill-wave"></i>
-            </div>
-            <h3>Application Fee</h3>
-            <p>Non-refundable application fee payment.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="section cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Ready to Join Auxano Schools?</h2>
-          <p>
-            Start your child's educational journey with us. Apply now and become
-            part of our community of excellence.
-          </p>
-          <div class="cta-actions">
-            <a href="contact.html" class="btn btn-primary">Apply Now</a>
-            <a href="contact.html" class="btn btn-secondary"
-              >Schedule a Visit</a
-            >
-          </div>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Begin Your Journey?</h2>
+                <p>
+                    Join our community of learners and give your child the foundation for a successful future.
+                </p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+                    <a href="contact.html" class="btn btn-secondary">Schedule a Visit</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
         <div class="footer-content">
-          <div class="footer-section">
             <div class="footer-brand">
-              <svg
-                class="footer-logo"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <circle
-                  cx="20"
-                  cy="20"
-                  r="18"
-                  stroke="#22C55E"
-                  stroke-width="2"
-                  fill="none"
-                />
-                <path
-                  d="M12 20L18 26L28 14"
-                  stroke="#22C55E"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <text
-                  x="20"
-                  y="35"
-                  text-anchor="middle"
-                  font-family="Inter, sans-serif"
-                  font-size="8"
-                  font-weight="bold"
-                  fill="#22C55E"
-                >
-                  AUXANO
-                </text>
-              </svg>
-              <h3>Auxano Schools</h3>
-              <p>Excellence in Education</p>
+                <h3>Auxano Schools</h3>
+                <p>Nurturing excellence and building futures through quality education in Yaba, Lagos.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <div class="social-links">
-              <a href="#" class="social-link"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-          </div>
-
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="academics.html">Academics</a></li>
-              <li><a href="admissions.html">Admissions</a></li>
-              <li><a href="facilities.html">Facilities</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Admissions</h4>
-            <ul class="footer-links">
-              <li><a href="#admission-process">Admission Process</a></li>
-              <li><a href="#requirements">Requirements</a></li>
-              <li><a href="#fees">Tuition Fees</a></li>
-              <li><a href="#scholarships">Scholarships</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Contact Info</h4>
-            <div class="contact-info">
-              <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-              <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-              <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
-              <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+            
+            <div class="footer-section">
+                <h4>Programs</h4>
+                <ul class="footer-links">
+                    <li><a href="academics.html#early-years">Early Years</a></li>
+                    <li><a href="academics.html#primary">Primary School</a></li>
+                    <li><a href="academics.html#secondary">Secondary School</a></li>
+                    <li><a href="academics.html#extracurricular">Extracurricular</a></li>
+                </ul>
             </div>
-          </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+                </div>
+            </div>
         </div>
-
+        
         <div class="footer-bottom">
-          <div class="container">
-            <p>
-              &copy; 2024 Auxano Schools. All rights reserved. | Designed with
-              ❤️ for excellence in education
-            </p>
-            <div class="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Cookie Policy</a>
+            <div class="container">
+                <p>&copy; 2024 Auxano Schools. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </footer>
 
     <script src="script.js"></script>
-  </body>
-</html>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admissions - Auxano Schools</title>
-    <meta
-      name="description"
-      content="Apply to Auxano Schools - Premier educational institution in Yaba, Lagos. Learn about our admission process, requirements, and how to apply."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-      <div class="loading-spinner"></div>
-      <p>Loading Auxano Schools...</p>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-background">
-        <div class="hero-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-        </div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <span class="title-line">Join Our Community</span>
-            <span class="title-line">Begin Your Journey</span>
-          </h1>
-          <p class="hero-subtitle">
-            Discover how to become part of Auxano Schools and start your child's
-            educational journey with us.
-          </p>
-          <div class="hero-actions">
-            <a href="#admission-process" class="btn btn-primary">Learn More</a>
-            <a href="contact.html" class="btn btn-secondary">Apply Now</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-container">
-            <div class="hero-image-placeholder">
-              <div class="placeholder-icon">🎓</div>
-              <p>Admissions</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-      </div>
-    </section>
-
-    <!-- Admission Process -->
-    <section id="admission-process" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Admission Process</h2>
-          <p class="section-subtitle">
-            A simple and transparent process to join our educational community
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <div class="process-step" data-aos="fade-up">
-            <div class="step-number">1</div>
-            <h3>Inquiry & Application</h3>
-            <p>
-              Submit an inquiry form and complete the online application with
-              required documents.
-            </p>
-          </div>
-
-          <div class="process-step" data-aos="fade-up" data-aos-delay="100">
-            <div class="step-number">2</div>
-            <h3>Assessment</h3>
-            <p>
-              Students undergo age-appropriate assessments to determine their
-              current academic level.
-            </p>
-          </div>
-
-          <div class="process-step" data-aos="fade-up" data-aos-delay="200">
-            <div class="step-number">3</div>
-            <h3>Interview</h3>
-            <p>
-              Family interview to discuss educational goals and ensure alignment
-              with our values.
-            </p>
-          </div>
-
-          <div class="process-step" data-aos="fade-up" data-aos-delay="300">
-            <div class="step-number">4</div>
-            <h3>Acceptance</h3>
-            <p>
-              Successful applicants receive admission offers and enrollment
-              instructions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Requirements -->
-    <section class="section requirements-section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Admission Requirements</h2>
-          <p class="section-subtitle">
-            What you need to prepare for a successful application
-          </p>
-        </div>
-
-        <div class="requirements-grid">
-          <div class="requirement-card" data-aos="fade-up">
-            <div class="requirement-icon">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <h3>Application Form</h3>
-            <p>Completed application form with all required information.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="requirement-icon">
-              <i class="fas fa-birthday-cake"></i>
-            </div>
-            <h3>Birth Certificate</h3>
-            <p>Original birth certificate or certified copy.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="requirement-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>Academic Records</h3>
-            <p>Previous school records and transcripts (if applicable).</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="requirement-icon">
-              <i class="fas fa-user-md"></i>
-            </div>
-            <h3>Medical Records</h3>
-            <p>Immunization records and medical history.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="requirement-icon">
-              <i class="fas fa-camera"></i>
-            </div>
-            <h3>Passport Photos</h3>
-            <p>Recent passport-sized photographs of the student.</p>
-          </div>
-
-          <div class="requirement-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="requirement-icon">
-              <i class="fas fa-money-bill-wave"></i>
-            </div>
-            <h3>Application Fee</h3>
-            <p>Non-refundable application fee payment.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="section cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Ready to Join Auxano Schools?</h2>
-          <p>
-            Start your child's educational journey with us. Apply now and become
-            part of our community of excellence.
-          </p>
-          <div class="cta-actions">
-            <a href="contact.html" class="btn btn-primary">Apply Now</a>
-            <a href="contact.html" class="btn btn-secondary"
-              >Schedule a Visit</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <div class="footer-brand">
-              <svg
-                class="footer-logo"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <circle
-                  cx="20"
-                  cy="20"
-                  r="18"
-                  stroke="#22C55E"
-                  stroke-width="2"
-                  fill="none"
-                />
-                <path
-                  d="M12 20L18 26L28 14"
-                  stroke="#22C55E"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <text
-                  x="20"
-                  y="35"
-                  text-anchor="middle"
-                  font-family="Inter, sans-serif"
-                  font-size="8"
-                  font-weight="bold"
-                  fill="#22C55E"
-                >
-                  AUXANO
-                </text>
-              </svg>
-              <h3>Auxano Schools</h3>
-              <p>Excellence in Education</p>
-            </div>
-            <div class="social-links">
-              <a href="#" class="social-link"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="academics.html">Academics</a></li>
-              <li><a href="admissions.html">Admissions</a></li>
-              <li><a href="facilities.html">Facilities</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Admissions</h4>
-            <ul class="footer-links">
-              <li><a href="#admission-process">Admission Process</a></li>
-              <li><a href="#requirements">Requirements</a></li>
-              <li><a href="#fees">Tuition Fees</a></li>
-              <li><a href="#scholarships">Scholarships</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-            <h4>Contact Info</h4>
-            <div class="contact-info">
-              <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-              <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-              <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
-              <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom">
-          <div class="container">
-            <p>
-              &copy; 2024 Auxano Schools. All rights reserved. | Designed with
-              ❤️ for excellence in education
-            </p>
-            <div class="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-              <a href="#">Cookie Policy</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
 

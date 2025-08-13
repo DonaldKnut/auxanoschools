@@ -9,6 +9,8 @@
       content="Learn about Auxano Schools' history, mission, vision, and commitment to excellence in education in Yaba, Lagos."
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -24,32 +26,59 @@
       <nav class="nav-container">
         <div class="nav-brand">
           <div class="logo">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
-                  <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
-                  <defs>
-                      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
-                          <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
-                      </linearGradient>
-                  </defs>
-              </svg>
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="40" height="40" rx="8" fill="url(#gradient)" />
+              <text
+                x="20"
+                y="26"
+                text-anchor="middle"
+                fill="white"
+                font-family="Arial, sans-serif"
+                font-size="16"
+                font-weight="bold"
+              >
+                A
+              </text>
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #22c55e; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #fbbf24; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
           <span class="brand-text">Auxano Schools</span>
-      </div>
-      </div>
-
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link active">About Us</a>
-          <a href="academics.html" class="nav-link">Academics</a>
-          <a href="admissions.html" class="nav-link">Admissions</a>
-          <a href="facilities.html" class="nav-link">Facilities</a>
-          <a href="contact.html" class="nav-link">Contact</a>
         </div>
 
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
         <div class="nav-actions">
-          <button class="btn-primary">Apply Now</button>
+          <a href="admissions.html" class="btn btn-primary">Apply Now</a>
           <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -117,8 +146,8 @@
           </div>
           <div class="story-visual">
             <div class="story-image-placeholder">
-              <i class="fas fa-history"></i>
-              <p>School History</p>
+              <div class="placeholder-icon">🏛️</div>
+              <p>Our School Building</p>
             </div>
           </div>
         </div>
@@ -128,30 +157,36 @@
     <!-- Mission & Vision Section -->
     <section class="mission-vision">
       <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Mission & Vision</h2>
+          <p class="section-subtitle">
+            The principles that guide everything we do at Auxano Schools
+          </p>
+        </div>
+
         <div class="mission-vision-grid">
-          <div class="mission-card">
+          <div class="mission-card" data-aos="fade-up">
             <div class="card-icon">
               <i class="fas fa-bullseye"></i>
             </div>
             <h3>Our Mission</h3>
             <p>
-              To provide exceptional education that empowers students to become
-              confident, creative, and compassionate leaders who make positive
-              contributions to society. We strive to create an inclusive
-              learning environment that celebrates diversity and fosters a love
-              for lifelong learning.
+              To provide exceptional education that empowers students with
+              knowledge, skills, and character to become responsible global
+              citizens and leaders of tomorrow.
             </p>
           </div>
-          <div class="vision-card">
+
+          <div class="vision-card" data-aos="fade-up" data-aos-delay="100">
             <div class="card-icon">
               <i class="fas fa-eye"></i>
             </div>
             <h3>Our Vision</h3>
             <p>
               To be the leading educational institution in Nigeria, recognized
-              for academic excellence, innovative teaching methods, and the
-              development of well-rounded individuals who are prepared to
-              succeed in an ever-changing global landscape.
+              for academic excellence, innovation, and the development of
+              well-rounded individuals who make positive contributions to
+              society.
             </p>
           </div>
         </div>
@@ -162,121 +197,134 @@
     <section class="values">
       <div class="container">
         <div class="section-header">
-          <h2>Our Core Values</h2>
-          <p>The principles that guide everything we do at Auxano Schools</p>
+          <h2 class="section-title">Our Core Values</h2>
+          <p class="section-subtitle">
+            The foundation of our educational philosophy
+          </p>
         </div>
+
         <div class="values-grid">
-          <div class="value-card">
+          <div class="value-card" data-aos="fade-up">
             <div class="value-icon">
               <i class="fas fa-star"></i>
             </div>
             <h3>Excellence</h3>
             <p>
-              We strive for excellence in all aspects of education, from
-              academic performance to character development.
+              We strive for excellence in everything we do, setting high
+              standards for academic achievement and personal development.
             </p>
           </div>
-          <div class="value-card">
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="100">
             <div class="value-icon">
               <i class="fas fa-heart"></i>
             </div>
             <h3>Integrity</h3>
             <p>
               We uphold the highest standards of honesty, ethics, and moral
-              values in all our interactions.
+              character in all our interactions and decisions.
             </p>
           </div>
-          <div class="value-card">
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="200">
             <div class="value-icon">
               <i class="fas fa-users"></i>
             </div>
             <h3>Respect</h3>
             <p>
-              We foster an environment of mutual respect, understanding, and
-              appreciation for diversity.
+              We foster a culture of mutual respect, understanding, and
+              appreciation for diversity in our school community.
             </p>
           </div>
-          <div class="value-card">
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="300">
             <div class="value-icon">
               <i class="fas fa-lightbulb"></i>
             </div>
             <h3>Innovation</h3>
             <p>
-              We embrace creativity and innovation in teaching methods and
-              learning approaches.
+              We embrace creativity and innovation, encouraging students to
+              think critically and solve problems creatively.
             </p>
           </div>
-          <div class="value-card">
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="400">
             <div class="value-icon">
               <i class="fas fa-hands-helping"></i>
             </div>
-            <h3>Community</h3>
+            <h3>Service</h3>
             <p>
-              We build strong partnerships with families and the community to
-              support student success.
+              We instill a sense of social responsibility and commitment to
+              serving others and making a positive impact in the community.
             </p>
           </div>
-          <div class="value-card">
+
+          <div class="value-card" data-aos="fade-up" data-aos-delay="500">
             <div class="value-icon">
-              <i class="fas fa-seedling"></i>
+              <i class="fas fa-globe"></i>
             </div>
-            <h3>Growth</h3>
+            <h3>Global Perspective</h3>
             <p>
-              We encourage continuous learning and personal growth for students,
-              staff, and the institution.
+              We prepare students for a globalized world, fostering cultural
+              awareness and international understanding.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Leadership Team Section -->
+    <!-- Leadership Section -->
     <section class="leadership">
       <div class="container">
         <div class="section-header">
-          <h2>Our Leadership Team</h2>
-          <p>
-            Meet the dedicated professionals who guide our school's vision and
-            operations
+          <h2 class="section-title">Our Leadership Team</h2>
+          <p class="section-subtitle">
+            Meet the dedicated professionals guiding our school's success
           </p>
         </div>
+
         <div class="leadership-grid">
-          <div class="leader-card">
+          <div class="leader-card" data-aos="fade-up">
             <div class="leader-image-placeholder">
-              <i class="fas fa-user-tie"></i>
+              <div class="placeholder-icon">👨‍🏫</div>
             </div>
             <div class="leader-info">
               <h3>Dr. Sarah Johnson</h3>
               <p class="leader-title">Principal</p>
               <p class="leader-bio">
                 With over 15 years of experience in education, Dr. Johnson leads
-                our school with passion and dedication to academic excellence.
+                our school with passion and dedication, ensuring every student
+                receives the best possible education.
               </p>
             </div>
           </div>
-          <div class="leader-card">
+
+          <div class="leader-card" data-aos="fade-up" data-aos-delay="100">
             <div class="leader-image-placeholder">
-              <i class="fas fa-user-graduate"></i>
+              <div class="placeholder-icon">👩‍🏫</div>
             </div>
             <div class="leader-info">
-              <h3>Mr. David Adebayo</h3>
+              <h3>Mr. David Chen</h3>
               <p class="leader-title">Vice Principal</p>
               <p class="leader-bio">
-                Mr. Adebayo brings innovative approaches to curriculum
-                development and student engagement strategies.
+                Mr. Chen brings innovative approaches to curriculum development
+                and student engagement, ensuring our academic programs remain
+                cutting-edge.
               </p>
             </div>
           </div>
-          <div class="leader-card">
+
+          <div class="leader-card" data-aos="fade-up" data-aos-delay="200">
             <div class="leader-image-placeholder">
-              <i class="fas fa-chalkboard-teacher"></i>
+              <div class="placeholder-icon">👨‍💼</div>
             </div>
             <div class="leader-info">
-              <h3>Mrs. Grace Okechukwu</h3>
+              <h3>Mrs. Amina Hassan</h3>
               <p class="leader-title">Head of Academics</p>
               <p class="leader-bio">
-                Mrs. Okechukwu ensures our academic programs meet the highest
-                standards and prepare students for future success.
+                Mrs. Hassan oversees our academic excellence programs and
+                ensures that our teaching methodologies meet international
+                standards.
               </p>
             </div>
           </div>
@@ -288,14 +336,14 @@
     <section class="achievements">
       <div class="container">
         <div class="section-header">
-          <h2>Our Achievements</h2>
-          <p>
-            Celebrating the milestones and accomplishments that define our
-            journey
+          <h2 class="section-title">Our Achievements</h2>
+          <p class="section-subtitle">
+            Milestones that mark our journey of excellence
           </p>
         </div>
+
         <div class="achievements-timeline">
-          <div class="timeline-item">
+          <div class="timeline-item" data-aos="fade-up">
             <div class="timeline-year">2010</div>
             <div class="timeline-content">
               <h3>School Founded</h3>
@@ -305,40 +353,44 @@
               </p>
             </div>
           </div>
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
             <div class="timeline-year">2015</div>
             <div class="timeline-content">
               <h3>First Graduation</h3>
               <p>
-                Our first graduating class achieves 100% success rate in
-                national examinations.
+                Our first batch of students graduates with outstanding academic
+                achievements.
               </p>
             </div>
           </div>
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
             <div class="timeline-year">2018</div>
             <div class="timeline-content">
-              <h3>Excellence Award</h3>
+              <h3>Academic Excellence Award</h3>
               <p>
-                Recognized as the Best Private School in Lagos State for
-                academic excellence.
+                Recognized as the best private school in Lagos for academic
+                performance.
               </p>
             </div>
           </div>
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
             <div class="timeline-year">2020</div>
             <div class="timeline-content">
-              <h3>Digital Transformation</h3>
+              <h3>Technology Integration</h3>
               <p>
-                Successfully implemented comprehensive digital learning
-                platforms and infrastructure.
+                Successfully implemented digital learning platforms and smart
+                classroom technology.
               </p>
             </div>
           </div>
-          <div class="timeline-item">
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
             <div class="timeline-year">2024</div>
             <div class="timeline-content">
-              <h3>Global Recognition</h3>
+              <h3>International Recognition</h3>
               <p>
                 Achieved international accreditation and partnerships with
                 leading educational institutions.
@@ -349,23 +401,18 @@
       </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>Join Our Community</h2>
+          <h2>Join Our Educational Journey</h2>
           <p>
-            Be part of a school that values excellence, innovation, and
-            character development. Apply now and give your child the foundation
-            for a bright future.
+            Be part of a community that values excellence, innovation, and the
+            development of future leaders.
           </p>
           <div class="cta-actions">
-            <a href="admissions.html" class="btn-primary btn-large"
-              >Apply Now</a
-            >
-            <a href="contact.html" class="btn-secondary btn-large"
-              >Schedule a Visit</a
-            >
+            <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
           </div>
         </div>
       </div>
@@ -374,50 +421,21 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-brand">
-            <svg
-              class="footer-logo"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-            >
-              <circle
-                cx="20"
-                cy="20"
-                r="18"
-                stroke="#22C55E"
-                stroke-width="2"
-                fill="none"
-              />
-              <path
-                d="M12 20L18 26L28 14"
-                stroke="#22C55E"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <text
-                x="20"
-                y="35"
-                text-anchor="middle"
-                font-family="Inter, sans-serif"
-                font-size="8"
-                font-weight="bold"
-                fill="#22C55E"
-              >
-                AUXANO
-              </text>
-            </svg>
-            <h3>Auxano Schools</h3>
-            <p>Excellence in Education</p>
-          </div>
+        <div class="footer-brand">
+          <h3>Auxano Schools</h3>
+          <p>
+            Nurturing excellence and building futures through quality education
+            in Yaba, Lagos.
+          </p>
           <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
         </div>
 
@@ -426,8 +444,8 @@
           <ul class="footer-links">
             <li><a href="about.html">About Us</a></li>
             <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
             <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -456,504 +474,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>
-            &copy; 2024 Auxano Schools. All rights reserved. | Designed with ❤️
-            for excellence in education
-          </p>
-          <div class="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Auxano Schools | Excellence in Education</title>
-    <meta
-      name="description"
-      content="Learn about Auxano Schools' history, mission, vision, and commitment to excellence in education in Yaba, Lagos."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header" id="header">
-      <nav class="nav-container">
-        <div class="nav-brand">
-          <svg
-            class="logo"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <circle
-              cx="20"
-              cy="20"
-              r="18"
-              stroke="#22C55E"
-              stroke-width="2"
-              fill="none"
-            />
-            <path
-              d="M12 20L18 26L28 14"
-              stroke="#22C55E"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <text
-              x="20"
-              y="35"
-              text-anchor="middle"
-              font-family="Inter, sans-serif"
-              font-size="8"
-              font-weight="bold"
-              fill="#22C55E"
-            >
-              AUXANO
-            </text>
-          </svg>
-          <span class="brand-text">Auxano Schools</span>
-        </div>
-
-        <div class="nav-menu" id="nav-menu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link active">About Us</a>
-          <a href="academics.html" class="nav-link">Academics</a>
-          <a href="admissions.html" class="nav-link">Admissions</a>
-          <a href="facilities.html" class="nav-link">Facilities</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </div>
-
-        <div class="nav-actions">
-          <button class="btn-primary">Apply Now</button>
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Page Header -->
-    <section class="page-header">
-      <div class="container">
-        <div class="page-header-content">
-          <h1>About Auxano Schools</h1>
-          <p>
-            Discover our story, mission, and commitment to excellence in
-            education
-          </p>
-          <nav class="breadcrumb">
-            <a href="index.html">Home</a>
-            <span>/</span>
-            <span>About Us</span>
-          </nav>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Story Section -->
-    <section class="our-story">
-      <div class="container">
-        <div class="story-content">
-          <div class="story-text">
-            <h2>Our Story</h2>
-            <p>
-              Auxano Schools was founded in 2010 with a vision to transform
-              education in Nigeria by providing world-class learning experiences
-              that nurture both academic excellence and character development.
-              What began as a small educational institution has grown into one
-              of Lagos's most respected schools.
-            </p>
-            <p>
-              Located in the vibrant community of Yaba, our school has been at
-              the forefront of educational innovation, consistently adapting our
-              curriculum and teaching methodologies to meet the evolving needs
-              of our students and the global community.
-            </p>
-            <div class="story-stats">
-              <div class="stat-item">
-                <h3>14+</h3>
-                <p>Years of Excellence</p>
-              </div>
-              <div class="stat-item">
-                <h3>500+</h3>
-                <p>Students Enrolled</p>
-              </div>
-              <div class="stat-item">
-                <h3>50+</h3>
-                <p>Expert Teachers</p>
-              </div>
-              <div class="stat-item">
-                <h3>95%</h3>
-                <p>Success Rate</p>
-              </div>
-            </div>
-          </div>
-          <div class="story-visual">
-            <div class="story-image-placeholder">
-              <i class="fas fa-history"></i>
-              <p>School History</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision">
-      <div class="container">
-        <div class="mission-vision-grid">
-          <div class="mission-card">
-            <div class="card-icon">
-              <i class="fas fa-bullseye"></i>
-            </div>
-            <h3>Our Mission</h3>
-            <p>
-              To provide exceptional education that empowers students to become
-              confident, creative, and compassionate leaders who make positive
-              contributions to society. We strive to create an inclusive
-              learning environment that celebrates diversity and fosters a love
-              for lifelong learning.
-            </p>
-          </div>
-          <div class="vision-card">
-            <div class="card-icon">
-              <i class="fas fa-eye"></i>
-            </div>
-            <h3>Our Vision</h3>
-            <p>
-              To be the leading educational institution in Nigeria, recognized
-              for academic excellence, innovative teaching methods, and the
-              development of well-rounded individuals who are prepared to
-              succeed in an ever-changing global landscape.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="values">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Core Values</h2>
-          <p>The principles that guide everything we do at Auxano Schools</p>
-        </div>
-        <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <h3>Excellence</h3>
-            <p>
-              We strive for excellence in all aspects of education, from
-              academic performance to character development.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-heart"></i>
-            </div>
-            <h3>Integrity</h3>
-            <p>
-              We uphold the highest standards of honesty, ethics, and moral
-              values in all our interactions.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <h3>Respect</h3>
-            <p>
-              We foster an environment of mutual respect, understanding, and
-              appreciation for diversity.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h3>Innovation</h3>
-            <p>
-              We embrace creativity and innovation in teaching methods and
-              learning approaches.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-hands-helping"></i>
-            </div>
-            <h3>Community</h3>
-            <p>
-              We build strong partnerships with families and the community to
-              support student success.
-            </p>
-          </div>
-          <div class="value-card">
-            <div class="value-icon">
-              <i class="fas fa-seedling"></i>
-            </div>
-            <h3>Growth</h3>
-            <p>
-              We encourage continuous learning and personal growth for students,
-              staff, and the institution.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Leadership Team Section -->
-    <section class="leadership">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Leadership Team</h2>
-          <p>
-            Meet the dedicated professionals who guide our school's vision and
-            operations
-          </p>
-        </div>
-        <div class="leadership-grid">
-          <div class="leader-card">
-            <div class="leader-image-placeholder">
-              <i class="fas fa-user-tie"></i>
-            </div>
-            <div class="leader-info">
-              <h3>Dr. Sarah Johnson</h3>
-              <p class="leader-title">Principal</p>
-              <p class="leader-bio">
-                With over 15 years of experience in education, Dr. Johnson leads
-                our school with passion and dedication to academic excellence.
-              </p>
-            </div>
-          </div>
-          <div class="leader-card">
-            <div class="leader-image-placeholder">
-              <i class="fas fa-user-graduate"></i>
-            </div>
-            <div class="leader-info">
-              <h3>Mr. David Adebayo</h3>
-              <p class="leader-title">Vice Principal</p>
-              <p class="leader-bio">
-                Mr. Adebayo brings innovative approaches to curriculum
-                development and student engagement strategies.
-              </p>
-            </div>
-          </div>
-          <div class="leader-card">
-            <div class="leader-image-placeholder">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </div>
-            <div class="leader-info">
-              <h3>Mrs. Grace Okechukwu</h3>
-              <p class="leader-title">Head of Academics</p>
-              <p class="leader-bio">
-                Mrs. Okechukwu ensures our academic programs meet the highest
-                standards and prepare students for future success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="achievements">
-      <div class="container">
-        <div class="section-header">
-          <h2>Our Achievements</h2>
-          <p>
-            Celebrating the milestones and accomplishments that define our
-            journey
-          </p>
-        </div>
-        <div class="achievements-timeline">
-          <div class="timeline-item">
-            <div class="timeline-year">2010</div>
-            <div class="timeline-content">
-              <h3>School Founded</h3>
-              <p>
-                Auxano Schools opens its doors with a vision to transform
-                education in Nigeria.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2015</div>
-            <div class="timeline-content">
-              <h3>First Graduation</h3>
-              <p>
-                Our first graduating class achieves 100% success rate in
-                national examinations.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2018</div>
-            <div class="timeline-content">
-              <h3>Excellence Award</h3>
-              <p>
-                Recognized as the Best Private School in Lagos State for
-                academic excellence.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2020</div>
-            <div class="timeline-content">
-              <h3>Digital Transformation</h3>
-              <p>
-                Successfully implemented comprehensive digital learning
-                platforms and infrastructure.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2024</div>
-            <div class="timeline-content">
-              <h3>Global Recognition</h3>
-              <p>
-                Achieved international accreditation and partnerships with
-                leading educational institutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Join Our Community</h2>
-          <p>
-            Be part of a school that values excellence, innovation, and
-            character development. Apply now and give your child the foundation
-            for a bright future.
-          </p>
-          <div class="cta-actions">
-            <a href="admissions.html" class="btn-primary btn-large"
-              >Apply Now</a
-            >
-            <a href="contact.html" class="btn-secondary btn-large"
-              >Schedule a Visit</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-brand">
-            <svg
-              class="footer-logo"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-            >
-              <circle
-                cx="20"
-                cy="20"
-                r="18"
-                stroke="#22C55E"
-                stroke-width="2"
-                fill="none"
-              />
-              <path
-                d="M12 20L18 26L28 14"
-                stroke="#22C55E"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <text
-                x="20"
-                y="35"
-                text-anchor="middle"
-                font-family="Inter, sans-serif"
-                font-size="8"
-                font-weight="bold"
-                fill="#22C55E"
-              >
-                AUXANO
-              </text>
-            </svg>
-            <h3>Auxano Schools</h3>
-            <p>Excellence in Education</p>
-          </div>
-          <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="admissions.html">Admissions</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4>Programs</h4>
-          <ul class="footer-links">
-            <li><a href="#">Early Years</a></li>
-            <li><a href="#">Primary School</a></li>
-            <li><a href="#">Secondary School</a></li>
-            <li><a href="#">Extracurricular</a></li>
-            <li><a href="#">Sports</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4>Contact Info</h4>
-          <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-            <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-            <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
-            <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <p>
-            &copy; 2024 Auxano Schools. All rights reserved. | Designed with ❤️
-            for excellence in education
-          </p>
+          <p>&copy; 2024 Auxano Schools. All rights reserved.</p>
           <div class="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

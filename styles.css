@@ -910,42 +910,59 @@ ol {
 }
 
 .footer-brand h3 {
-  color: var(--white);
+  color: var(--white) !important;
   margin-bottom: var(--spacing-2);
+  font-weight: 600;
 }
 
 .footer-brand p {
-  color: var(--white);
+  color: var(--white) !important;
   margin-bottom: var(--spacing-6);
+  opacity: 0.9;
 }
 
 .footer-section h4 {
-  color: var(--white);
+  color: var(--white) !important;
   margin-bottom: var(--spacing-6);
   font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-3);
 }
 
 .footer-links a {
-  color: var(--white);
+  color: var(--white) !important;
   text-decoration: none;
   transition: color var(--transition-normal);
+  opacity: 0.9;
 }
 
 .footer-links a:hover {
-  color: var(--secondary-gold);
+  color: var(--secondary-gold) !important;
+  opacity: 1;
 }
 
 .contact-info p {
-  color: var(--white);
+  color: var(--white) !important;
   margin-bottom: var(--spacing-3);
   display: flex;
   align-items: center;
   gap: var(--spacing-3);
+  opacity: 0.9;
 }
 
 .contact-info i {
-  color: var(--secondary-gold);
+  color: var(--secondary-gold) !important;
   width: 16px;
+  opacity: 1;
 }
 
 .footer-bottom {
@@ -962,8 +979,9 @@ ol {
 }
 
 .footer-bottom p {
-  color: var(--white);
+  color: var(--white) !important;
   margin: 0;
+  opacity: 0.9;
 }
 
 .footer-bottom-links {
@@ -972,14 +990,44 @@ ol {
 }
 
 .footer-bottom-links a {
-  color: var(--white);
+  color: var(--white) !important;
   text-decoration: none;
   font-size: var(--font-size-sm);
   transition: color var(--transition-normal);
+  opacity: 0.9;
 }
 
 .footer-bottom-links a:hover {
-  color: var(--secondary-gold);
+  color: var(--secondary-gold) !important;
+  opacity: 1;
+}
+
+/* Social links in footer */
+.social-links {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-green),
+    var(--secondary-gold)
+  );
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white) !important;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+}
+
+.social-link:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: var(--shadow-lg);
 }
 
 .footer-content {
@@ -1114,12 +1162,31 @@ ol {
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition-normal);
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
   }
 
   .nav-menu.active {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    border-bottom: 1px solid var(--gray-100);
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu .nav-link {
+    display: block;
+    padding: var(--spacing-4);
+    width: 100%;
+    text-align: left;
   }
 
   .hamburger {
