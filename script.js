@@ -51,10 +51,16 @@ function initHamburgerMenu() {
   );
 
   if (hamburger && navMenu) {
-    hamburger.addEventListener("click", function (e) {
+    // Add click event listener with multiple event types
+    hamburger.addEventListener("click", handleHamburgerClick);
+    hamburger.addEventListener("touchstart", handleHamburgerClick);
+    
+    function handleHamburgerClick(e) {
       e.preventDefault();
       e.stopPropagation();
       console.log("Hamburger clicked!");
+      console.log("Event type:", e.type);
+      console.log("Target:", e.target);
 
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
@@ -65,7 +71,7 @@ function initHamburgerMenu() {
       } else {
         document.body.style.overflow = "";
       }
-    });
+    }
 
     // Close menu when clicking on a link
     navLinks.forEach((link) => {

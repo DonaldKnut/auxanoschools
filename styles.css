@@ -340,6 +340,13 @@ p {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  padding: 8px;
+  z-index: 1001;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .hamburger span {
@@ -348,6 +355,7 @@ p {
   background: var(--gray-700);
   border-radius: var(--radius-full);
   transition: all var(--transition-normal);
+  pointer-events: none;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -1191,6 +1199,13 @@ ol {
 
   .hamburger {
     display: flex;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
   }
 
   .hero-content {
