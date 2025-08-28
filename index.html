@@ -1,321 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auxano Schools - Excellence in Education</title>
-    <meta name="description" content="Auxano Schools in Yaba, Lagos - Providing quality education and nurturing future leaders. Discover our academic programs, facilities, and admission process.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUXANO - Excellence in Education</title>
+    <meta
+      name="description"
+      content="AUXANO in Yaba, Lagos - Located at 5/7, Lancaster street Onike Sabo Yaba, beside Queen's College Yaba. Providing quality education and nurturing future leaders. Discover our academic programs, facilities, and admission process."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* WhatsApp Chat Button Styles */
+      .whatsapp-chat {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        animation: bounce 2s infinite;
+      }
 
+      .whatsapp-chat a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s ease;
+      }
 
+      .whatsapp-chat a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+      }
+
+      .whatsapp-chat i {
+        font-size: 28px;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .whatsapp-chat {
+          bottom: 15px;
+          right: 15px;
+        }
+
+        .whatsapp-chat a {
+          width: 50px;
+          height: 50px;
+        }
+
+        .whatsapp-chat i {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+      <a
+        href="https://wa.me/2349036921072"
+        target="_blank"
+        title="Chat with us on WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
     <!-- Header -->
     <header class="header" id="header">
-        <nav class="nav-container">
-            <div class="nav-brand">
-                <div class="logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
-                        <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
-                        <defs>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <span class="brand-text">Auxano Schools</span>
-            </div>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="academics.html" class="nav-link">Academics</a></li>
-                <li><a href="facilities.html" class="nav-link">Facilities</a></li>
-                <li><a href="admissions.html" class="nav-link">Admissions</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            
-            <div class="nav-actions">
-                <a href="admissions.html" class="btn btn-primary">Apply Now</a>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
+      <nav class="nav-container">
+        <div class="nav-brand">
+          <div class="logo">
+            <img
+              src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756311535/auxano_h07ffi.png"
+              alt="AUXANO Logo"
+              width="80"
+              height="80"
+              style="border-radius: 50%; object-fit: cover"
+            />
+          </div>
+          <span class="brand-text">AUXANO</span>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="academics.html" class="nav-link">Academics</a></li>
+          <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
+      <div class="hero-background">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
         </div>
-        
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Nurturing Excellence,
-                    <span class="title-line">Building Futures</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Welcome to Auxano Schools, where we provide world-class education in a nurturing environment. 
-                    Located in the heart of Yaba, Lagos, we are committed to developing well-rounded individuals 
-                    who are prepared for the challenges of tomorrow.
-                </p>
-                <div class="hero-actions">
-                    <a href="admissions.html" class="btn btn-primary btn-large">Start Your Journey</a>
-                    <a href="about.html" class="btn btn-secondary btn-large">Learn More</a>
-                </div>
-            </div>
-            
-            <div class="hero-visual">
-                <div class="hero-image-container">
-                    <div class="hero-image-placeholder">
-                        <i class="fas fa-graduation-cap"></i>
-                        <p>Excellence in Education</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Welcome to</span>
+            <span class="title-line">AUXANO</span>
+          </h1>
+          <p class="hero-subtitle">
+            Welcome to AUXANO CRECHE, NURSERY AND PRIMARY SCHOOL, where we
+            provide world-class education in a nurturing environment.
+          </p>
+          <div class="hero-actions">
+            <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+            <a href="about.html" class="btn btn-secondary">Learn More</a>
+          </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <div class="hero-image-placeholder">
+              <img
+                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756311701/kidddies_blk0bk.jpg"
+                alt="Children's Photo"
+                width="100%"
+                height="100%"
+                style="border-radius: 10px; object-fit: cover"
+              />
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why Choose Auxano Schools?</h2>
-                <p class="section-subtitle">
-                    We provide a comprehensive educational experience that prepares students for success in all aspects of life.
-                </p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Academic Excellence</h3>
-                    <p>Consistently high academic standards with a curriculum designed to challenge and inspire students to reach their full potential.</p>
-                </div>
-                
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Experienced Faculty</h3>
-                    <p>Our dedicated team of qualified educators brings years of experience and passion to create an engaging learning environment.</p>
-                </div>
-                
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Holistic Development</h3>
-                    <p>We focus on developing not just academic skills, but also character, leadership, and social responsibility.</p>
-                </div>
-                
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Safe Environment</h3>
-                    <p>Your child's safety and well-being are our top priorities with comprehensive security measures in place.</p>
-                </div>
-                
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Global Perspective</h3>
-                    <p>We prepare students for a globalized world with international curriculum standards and cultural awareness.</p>
-                </div>
-                
-                <div class="feature-card scroll-animate">
-                    <div class="feature-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovation & Technology</h3>
-                    <p>State-of-the-art facilities and technology integration to prepare students for the digital age.</p>
-                </div>
-            </div>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">OUR BENEFITS</h2>
+          <p class="section-subtitle">
+            Discover what makes us the preferred choice for quality education
+          </p>
         </div>
+
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Academic Excellence</h3>
+            <p>
+              Our comprehensive curriculum is designed to foster critical
+              thinking, creativity, and a love for learning in every child.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Experienced Teachers</h3>
+            <p>
+              Our dedicated team of qualified educators is committed to
+              nurturing each child's potential and fostering their growth.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Modern Facilities</h3>
+            <p>
+              State-of-the-art classrooms, well-equipped laboratories, and
+              extensive sports facilities provide an ideal learning environment.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Holistic Development</h3>
+            <p>
+              We focus on developing not just academic skills, but also
+              character, leadership, and social responsibility in our students.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Preview Section -->
-    <section class="about-preview">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Auxano Schools</h2>
-                    <p>
-                        Founded with a vision to provide exceptional education, Auxano Schools has been a cornerstone 
-                        of academic excellence in Yaba, Lagos. Our commitment to nurturing young minds and building 
-                        character has made us a trusted choice for parents seeking quality education for their children.
-                    </p>
-                    <p>
-                        We believe that every child has unique potential waiting to be discovered. Our comprehensive 
-                        approach to education ensures that students develop not only academically but also socially, 
-                        emotionally, and physically.
-                    </p>
-                    <a href="about.html" class="btn btn-primary">Learn More About Us</a>
-                </div>
-                
-                <div class="about-visual">
-                    <div class="about-image-placeholder">
-                        <i class="fas fa-school"></i>
-                        <p>Building Tomorrow's Leaders</p>
-                    </div>
-                </div>
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About AUXANO CRECHE, NURSERY AND PRIMARY SCHOOL</h2>
+            <p>
+              Founded with a vision to provide exceptional education, AUXANO
+              CRECHE, NURSERY AND PRIMARY SCHOOL has been a cornerstone of
+              educational excellence in Yaba, Lagos. Our commitment to nurturing
+              young minds and building strong foundations has made us a trusted
+              name in early childhood and primary education.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Students</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Teachers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Years</span>
+              </div>
             </div>
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="about-visual">
+            <div class="about-image-placeholder">
+              <div class="placeholder-icon">🏫</div>
+              <p>Our Campus</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Programs Section -->
-    <section class="programs">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Academic Programs</h2>
-                <p class="section-subtitle">
-                    We offer a comprehensive range of academic programs designed to meet the diverse needs and interests of our students.
-                </p>
-            </div>
-            
-            <div class="programs-grid">
-                <div class="program-card scroll-animate">
-                    <div class="program-icon">
-                        <i class="fas fa-baby"></i>
-                    </div>
-                    <h3>Early Years (Ages 2-5)</h3>
-                    <p>Foundation Stage</p>
-                    <ul>
-                        <li>Play-based learning approach</li>
-                        <li>Social and emotional development</li>
-                        <li>Basic literacy and numeracy skills</li>
-                        <li>Creative arts and physical activities</li>
-                    </ul>
-                </div>
-                
-                <div class="program-card scroll-animate">
-                    <div class="program-icon">
-                        <i class="fas fa-child"></i>
-                    </div>
-                    <h3>Primary School (Ages 6-11)</h3>
-                    <p>Key Stage 1 & 2</p>
-                    <ul>
-                        <li>Core subjects: English, Math, Science</li>
-                        <li>Social studies and humanities</li>
-                        <li>Arts, music, and physical education</li>
-                        <li>Character development programs</li>
-                    </ul>
-                </div>
-                
-                <div class="program-card scroll-animate">
-                    <div class="program-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3>Secondary School (Ages 12-16)</h3>
-                    <p>Key Stage 3 & 4</p>
-                    <ul>
-                        <li>IGCSE curriculum</li>
-                        <li>Advanced subject specialization</li>
-                        <li>Leadership and community service</li>
-                        <li>Career guidance and counseling</li>
-                    </ul>
-                </div>
-            </div>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Programs</h2>
+          <p class="section-subtitle">
+            Comprehensive educational programs designed for every stage of
+            development
+          </p>
         </div>
+
+        <div class="programs-grid">
+          <div class="program-card" data-aos="fade-up">
+            <div class="program-icon">
+              <i class="fas fa-baby"></i>
+            </div>
+            <h3>Creche (Daycare)</h3>
+            <p>
+              Early care and development for our youngest learners, providing a
+              safe and nurturing environment for growth and discovery.
+            </p>
+            <a href="academics.html#early-years" class="program-link"
+              >Learn More</a
+            >
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="program-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <h3>Preparatory Class</h3>
+            <p>
+              Foundation preparation focused on developing essential skills
+              through play-based learning and structured activities.
+            </p>
+            <a href="academics.html#primary" class="program-link">Learn More</a>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="program-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Nursery 1 & 2</h3>
+            <p>
+              Early childhood education with age-appropriate curriculum and
+              activities designed to build strong foundations for learning.
+            </p>
+            <a href="academics.html#primary" class="program-link">Learn More</a>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="program-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>KG (Kindergarten)</h3>
+            <p>
+              Kindergarten program preparing children for primary school with
+              comprehensive early education and skill development.
+            </p>
+            <a href="academics.html#primary" class="program-link">Learn More</a>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="program-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <h3>Primary 1-6</h3>
+            <p>
+              Comprehensive primary education with a focus on academic
+              excellence, character development, and preparation for future
+              success.
+            </p>
+            <a href="academics.html#primary" class="program-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Holiday Coaching Section -->
+    <section class="section holiday-coaching">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Holiday Coaching</h2>
+          <p class="section-subtitle">
+            Keep your child engaged and learning during holidays with our
+            specialized coaching programs
+          </p>
+        </div>
+
+        <div class="coaching-content">
+          <div class="coaching-info">
+            <h3>Program Details</h3>
+            <div class="coaching-schedule">
+              <div class="schedule-item">
+                <h4>📅 Schedule</h4>
+                <p>
+                  <strong>Monday to Thursday</strong><br />
+                  9:00 AM - 1:00 PM
+                </p>
+              </div>
+              <div class="schedule-item">
+                <h4>👥 Available Classes</h4>
+                <p>
+                  <strong>Nursery 1 & 2</strong><br />
+                  <strong>KG</strong><br />
+                  <strong>Primary 1-6</strong>
+                </p>
+              </div>
+              <div class="schedule-item">
+                <h4>🏫 After School Programs</h4>
+                <p>Extended learning opportunities for all classes</p>
+              </div>
+              <div class="schedule-item">
+                <h4>👶 Creche (Daycare)</h4>
+                <p>Full-day care for our youngest learners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment CTA Section -->
+    <section class="enrollment-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>🎓 ADMISSION IS ON!</h2>
+          <p>
+            Don't miss out on giving your child the best educational foundation.
+            Join our community of learners and start your child's journey to
+            success.
+          </p>
+          <div class="cta-actions">
+            <a href="admissions.html" class="btn btn-primary btn-large"
+              >ENROLL NOW!!!</a
+            >
+            <a href="contact.html" class="btn btn-secondary btn-large"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Connected</h2>
-                <p>Subscribe to our newsletter for the latest updates, events, and educational insights from Auxano Schools.</p>
-                <form class="newsletter-form" id="newsletter-form">
-                    <div class="form-group">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </div>
-                </form>
-            </div>
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Connected</h2>
+          <p>
+            Subscribe to our newsletter for the latest updates, events, and
+            educational insights from AUXANO.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>Auxano Schools</h3>
-                <p>Nurturing excellence and building futures through quality education in Yaba, Lagos.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="academics.html">Academics</a></li>
-                    <li><a href="facilities.html">Facilities</a></li>
-                    <li><a href="admissions.html">Admissions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Programs</h4>
-                <ul class="footer-links">
-                    <li><a href="academics.html#early-years">Early Years</a></li>
-                    <li><a href="academics.html#primary">Primary School</a></li>
-                    <li><a href="academics.html#secondary">Secondary School</a></li>
-                    <li><a href="academics.html#extracurricular">Extracurricular</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Contact Info</h4>
-                <div class="contact-info">
-                    <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-                    <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-                    <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
-                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
-                </div>
-            </div>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>AUXANO</h3>
+          <p>
+            Nurturing excellence and building futures through quality education
+            in Yaba, Lagos. Located at 5/7, Lancaster street Onike Sabo Yaba,
+            beside Queen's College Yaba.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://wa.me/2349036921072"
+              target="_blank"
+              class="social-link"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
         </div>
-        
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2024 Auxano Schools. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+
+        <div class="footer-section">
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="academics.html#early-years">Creche (Daycare)</a></li>
+            <li><a href="academics.html#primary">Preparatory Class</a></li>
+            <li><a href="academics.html#primary">Nursery 1 & 2</a></li>
+            <li><a href="academics.html#primary">KG (Kindergarten)</a></li>
+            <li><a href="academics.html#primary">Primary 1-6</a></li>
+            <li>
+              <a href="academics.html#extracurricular">Holiday Coaching</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 5/7, Lancaster street Onike
+              Sabo Yaba, beside Queen's College Yaba, Lagos, Nigeria
+            </p>
+            <p><i class="fas fa-phone"></i> +234 903 692 1072</p>
+            <p><i class="fab fa-whatsapp"></i> +234 903 692 1072</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 AUXANO. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

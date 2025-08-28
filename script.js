@@ -58,7 +58,7 @@ function initHamburgerMenu() {
     // Get the new hamburger reference
     const freshHamburger = document.getElementById("hamburger");
     const freshNavMenu = document.getElementById("nav-menu");
-    
+
     // Flag to prevent immediate closing
     let isToggling = false;
 
@@ -89,7 +89,7 @@ function initHamburgerMenu() {
 
       // Toggle menu state
       const isActive = freshNavMenu.classList.contains("active");
-      
+
       if (isActive) {
         // Closing menu
         freshHamburger.classList.remove("active");
@@ -113,7 +113,7 @@ function initHamburgerMenu() {
 
       // Force a repaint
       freshHamburger.offsetHeight;
-      
+
       // Reset flag after a short delay
       setTimeout(() => {
         isToggling = false;
@@ -348,18 +348,16 @@ function initLoadingScreen() {
   loadingScreen.className = "loading";
   loadingScreen.innerHTML = `
         <div class="loading-content">
-            <svg class="loading-logo" width="60" height="60" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="40" height="40" rx="8" fill="url(#loadingGradient)"/>
-                <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">A</text>
-                <defs>
-                    <linearGradient id="loadingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-            </svg>
+            <img 
+                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756311535/auxano_h07ffi.png" 
+                alt="AUXANO Logo" 
+                width="80" 
+                height="80" 
+                style="border-radius: 50%; object-fit: cover; margin-bottom: 1rem;"
+                class="loading-logo"
+            />
             <div class="loading-spinner"></div>
-            <p style="margin-top: 1rem; color: #22C55E; font-weight: 600;">Loading Auxano Schools...</p>
+            <p style="margin-top: 1rem; color: #22C55E; font-weight: 600;">Loading AUXANO Schools...</p>
         </div>
     `;
 

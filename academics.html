@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Academic Programs - Auxano Schools</title>
+    <title>Academic Programs - AUXANO</title>
     <meta
       name="description"
-      content="Explore our comprehensive academic programs from Early Years to Senior Secondary at Auxano Schools, Yaba, Lagos."
+      content="Explore our comprehensive academic programs from Creche to Primary School at AUXANO CRECHE, NURSERY AND PRIMARY SCHOOL, Yaba, Lagos. Located at 5/7, Lancaster street Onike Sabo Yaba, beside Queen's College Yaba."
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,53 +19,97 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      /* WhatsApp Chat Button Styles */
+      .whatsapp-chat {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        animation: bounce 2s infinite;
+      }
+
+      .whatsapp-chat a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-chat a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+      }
+
+      .whatsapp-chat i {
+        font-size: 28px;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .whatsapp-chat {
+          bottom: 15px;
+          right: 15px;
+        }
+
+        .whatsapp-chat a {
+          width: 50px;
+          height: 50px;
+        }
+
+        .whatsapp-chat i {
+          font-size: 24px;
+        }
+      }
+    </style>
   </head>
   <body>
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+      <a
+        href="https://wa.me/2349036921072"
+        target="_blank"
+        title="Chat with us on WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
     <!-- Header -->
     <header class="header" id="header">
       <nav class="nav-container">
         <div class="nav-brand">
           <div class="logo">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="40" height="40" rx="8" fill="url(#gradient)" />
-              <text
-                x="20"
-                y="26"
-                text-anchor="middle"
-                fill="white"
-                font-family="Arial, sans-serif"
-                font-size="16"
-                font-weight="bold"
-              >
-                A
-              </text>
-              <defs>
-                <linearGradient
-                  id="gradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop
-                    offset="0%"
-                    style="stop-color: #22c55e; stop-opacity: 1"
-                  />
-                  <stop
-                    offset="100%"
-                    style="stop-color: #fbbf24; stop-opacity: 1"
-                  />
-                </linearGradient>
-              </defs>
-            </svg>
+            <img
+              src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756311535/auxano_h07ffi.png"
+              alt="AUXANO Logo"
+              width="80"
+              height="80"
+              style="border-radius: 50%; object-fit: cover"
+            />
           </div>
-          <span class="brand-text">Auxano Schools</span>
+          <span class="brand-text">AUXANO</span>
         </div>
 
         <ul class="nav-menu" id="nav-menu">
@@ -102,25 +146,28 @@
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title">
-            <span class="title-line">Academic Excellence</span>
-            <span class="title-line">Comprehensive Education</span>
+            <span class="title-line">Academic Programs</span>
+            <span class="title-line">Excellence in Education</span>
           </h1>
           <p class="hero-subtitle">
-            Comprehensive education from Early Years to Senior Secondary,
-            preparing students for success in a global world.
+            Discover our comprehensive educational programs designed to nurture
+            young minds and build strong foundations for lifelong learning.
           </p>
           <div class="hero-actions">
-            <a href="#programs" class="btn btn-primary">Explore Programs</a>
-            <a href="contact.html" class="btn btn-secondary"
-              >Schedule a Visit</a
-            >
+            <a href="#early-years" class="btn btn-primary">Early Years</a>
+            <a href="#primary" class="btn btn-secondary">Primary School</a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="hero-image-container">
             <div class="hero-image-placeholder">
-              <div class="placeholder-icon">📚</div>
-              <p>Academic Programs</p>
+              <img
+                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756312811/academic-excellence_dqfpxz.jpg"
+                alt="Academic Excellence"
+                width="100%"
+                height="100%"
+                style="border-radius: 10px; object-fit: cover"
+              />
             </div>
           </div>
         </div>
@@ -130,132 +177,174 @@
       </div>
     </section>
 
-    <!-- Academic Programs -->
-    <section id="programs" class="section programs-section">
+    <!-- Early Years Section -->
+    <section id="early-years" class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Our Academic Programs</h2>
+          <h2 class="section-title">Early Years Programs</h2>
           <p class="section-subtitle">
-            A comprehensive curriculum designed to nurture intellectual growth
-            and character development
+            Nurturing the youngest learners with care and educational excellence
           </p>
         </div>
 
         <div class="programs-grid">
-          <!-- Early Years -->
           <div class="program-card" data-aos="fade-up">
-            <div class="program-icon">👶</div>
-            <h3>Early Years (Ages 2-5)</h3>
-            <p>
-              Foundation years focusing on play-based learning, social skills,
-              and early literacy development.
+            <div class="program-icon">
+              <i class="fas fa-baby"></i>
+            </div>
+            <h3>Creche (Ages 0-2)</h3>
+            <p class="program-description">
+              Early care and development for our youngest learners, providing a
+              safe and nurturing environment for growth and discovery.
             </p>
-            <ul class="program-features">
-              <li>Play-based curriculum</li>
-              <li>Early literacy & numeracy</li>
-              <li>Social & emotional development</li>
-              <li>Creative arts & music</li>
-            </ul>
-            <div class="program-stats">
-              <div class="stat">
-                <span class="stat-number">1:8</span>
-                <span class="stat-label">Teacher Ratio</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">15</span>
-                <span class="stat-label">Max Class Size</span>
-              </div>
+            <div class="program-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Safe and nurturing environment</li>
+                <li>Early developmental activities</li>
+                <li>Professional childcare staff</li>
+                <li>Age-appropriate learning materials</li>
+                <li>Regular health monitoring</li>
+              </ul>
+            </div>
+            <div class="program-schedule">
+              <h4>Schedule:</h4>
+              <p>Monday - Friday: 7:30 AM - 5:00 PM</p>
             </div>
           </div>
 
-          <!-- Primary School -->
           <div class="program-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="program-icon">🎒</div>
-            <h3>Primary School (Ages 6-11)</h3>
-            <p>
-              Comprehensive primary education with focus on core subjects,
-              critical thinking, and character building.
-            </p>
-            <ul class="program-features">
-              <li>Core subjects (Math, English, Science)</li>
-              <li>Social studies & humanities</li>
-              <li>Physical education & sports</li>
-              <li>Technology integration</li>
-            </ul>
-            <div class="program-stats">
-              <div class="stat">
-                <span class="stat-number">1:12</span>
-                <span class="stat-label">Teacher Ratio</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">20</span>
-                <span class="stat-label">Max Class Size</span>
-              </div>
+            <div class="program-icon">
+              <i class="fas fa-child"></i>
             </div>
-          </div>
-
-          <!-- Junior Secondary -->
-          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="program-icon">🔬</div>
-            <h3>Junior Secondary (Ages 12-14)</h3>
-            <p>
-              Specialized education preparing students for senior secondary with
-              advanced subjects and career exploration.
+            <h3>Nursery (Ages 3-5)</h3>
+            <p class="program-description">
+              Foundation years focused on developing essential skills through
+              play-based learning and structured activities.
             </p>
-            <ul class="program-features">
-              <li>Advanced mathematics & sciences</li>
-              <li>Literature & creative writing</li>
-              <li>Computer science & coding</li>
-              <li>Career guidance & counseling</li>
-            </ul>
-            <div class="program-stats">
-              <div class="stat">
-                <span class="stat-number">1:15</span>
-                <span class="stat-label">Teacher Ratio</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">25</span>
-                <span class="stat-label">Max Class Size</span>
-              </div>
+            <div class="program-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Play-based learning approach</li>
+                <li>Social and emotional development</li>
+                <li>Basic literacy and numeracy skills</li>
+                <li>Creative arts and physical activities</li>
+                <li>Character development programs</li>
+              </ul>
             </div>
-          </div>
-
-          <!-- Senior Secondary -->
-          <div class="program-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="program-icon">🎓</div>
-            <h3>Senior Secondary (Ages 15-17)</h3>
-            <p>
-              Advanced education with specialized tracks preparing students for
-              university and career success.
-            </p>
-            <ul class="program-features">
-              <li>IGCSE & A-Level curriculum</li>
-              <li>Subject specialization</li>
-              <li>University preparation</li>
-              <li>Leadership development</li>
-            </ul>
-            <div class="program-stats">
-              <div class="stat">
-                <span class="stat-number">1:18</span>
-                <span class="stat-label">Teacher Ratio</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">30</span>
-                <span class="stat-label">Max Class Size</span>
-              </div>
+            <div class="program-schedule">
+              <h4>Schedule:</h4>
+              <p>Monday - Friday: 8:00 AM - 2:00 PM</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Extracurricular Activities -->
-    <section class="section extracurricular-section">
+    <!-- Primary School Section -->
+    <section id="primary" class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Extracurricular Excellence</h2>
+          <h2 class="section-title">Primary School (Ages 6-11)</h2>
           <p class="section-subtitle">
-            Beyond academics: sports, arts, leadership, and community service
+            Comprehensive primary education with a focus on academic excellence
+            and character development
+          </p>
+        </div>
+
+        <div class="primary-content">
+          <div class="primary-overview">
+            <h3>Primary Education Excellence</h3>
+            <p>
+              Our primary school program provides a solid foundation for
+              academic success and personal growth. We focus on developing
+              critical thinking skills, creativity, and a love for learning in
+              every child.
+            </p>
+            <div class="primary-stats">
+              <div class="stat-item">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Grade Levels</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">15:1</span>
+                <span class="stat-label">Student-Teacher Ratio</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">Success Rate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="curriculum-grid">
+            <div class="curriculum-card" data-aos="fade-up">
+              <h4>Core Subjects</h4>
+              <ul>
+                <li>English Language & Literature</li>
+                <li>Mathematics</li>
+                <li>Science</li>
+                <li>Social Studies</li>
+                <li>Nigerian Languages</li>
+              </ul>
+            </div>
+
+            <div
+              class="curriculum-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h4>Creative Arts</h4>
+              <ul>
+                <li>Visual Arts</li>
+                <li>Music & Movement</li>
+                <li>Drama & Performance</li>
+                <li>Creative Writing</li>
+                <li>Handcrafts</li>
+              </ul>
+            </div>
+
+            <div
+              class="curriculum-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h4>Physical Education</h4>
+              <ul>
+                <li>Sports & Games</li>
+                <li>Physical Fitness</li>
+                <li>Team Building</li>
+                <li>Health Education</li>
+                <li>Outdoor Activities</li>
+              </ul>
+            </div>
+
+            <div
+              class="curriculum-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h4>Technology</h4>
+              <ul>
+                <li>Computer Studies</li>
+                <li>Digital Literacy</li>
+                <li>Coding Basics</li>
+                <li>Online Safety</li>
+                <li>Educational Apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extracurricular Section -->
+    <section id="extracurricular" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Extracurricular Activities</h2>
+          <p class="section-subtitle">
+            Enriching experiences that develop talents and build character
           </p>
         </div>
 
@@ -265,31 +354,83 @@
               <i class="fas fa-futbol"></i>
             </div>
             <h3>Sports & Athletics</h3>
-            <p>Football, basketball, swimming, track & field, and more</p>
+            <p>
+              Football, basketball, swimming, athletics, and other sports
+              activities to promote physical fitness and teamwork.
+            </p>
           </div>
 
           <div class="activity-card" data-aos="fade-up" data-aos-delay="100">
             <div class="activity-icon">
-              <i class="fas fa-palette"></i>
+              <i class="fas fa-music"></i>
             </div>
-            <h3>Arts & Culture</h3>
-            <p>Music, drama, visual arts, and cultural celebrations</p>
+            <h3>Music & Arts</h3>
+            <p>
+              Choir, instrumental music, visual arts, and creative expression
+              programs to nurture artistic talents.
+            </p>
           </div>
 
           <div class="activity-card" data-aos="fade-up" data-aos-delay="200">
             <div class="activity-icon">
-              <i class="fas fa-users"></i>
+              <i class="fas fa-chess"></i>
             </div>
-            <h3>Leadership</h3>
-            <p>Student government, clubs, and community service</p>
+            <h3>Clubs & Societies</h3>
+            <p>
+              Debate club, science club, reading club, and other interest-based
+              groups to develop leadership and social skills.
+            </p>
           </div>
 
           <div class="activity-card" data-aos="fade-up" data-aos-delay="300">
             <div class="activity-icon">
-              <i class="fas fa-laptop-code"></i>
+              <i class="fas fa-hands-helping"></i>
             </div>
-            <h3>Technology</h3>
-            <p>Coding clubs, robotics, and digital innovation</p>
+            <h3>Community Service</h3>
+            <p>
+              Volunteer programs and community outreach activities to instill
+              values of service and social responsibility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assessment Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Assessment & Progress</h2>
+          <p class="section-subtitle">
+            Comprehensive evaluation systems to track student development
+          </p>
+        </div>
+
+        <div class="assessment-content">
+          <div class="assessment-methods">
+            <div class="method-card" data-aos="fade-up">
+              <h3>Continuous Assessment</h3>
+              <p>
+                Regular evaluation through classwork, homework, projects, and
+                participation to monitor ongoing progress.
+              </p>
+            </div>
+
+            <div class="method-card" data-aos="fade-up" data-aos-delay="100">
+              <h3>Term Examinations</h3>
+              <p>
+                Comprehensive end-of-term assessments to evaluate understanding
+                and retention of learned concepts.
+              </p>
+            </div>
+
+            <div class="method-card" data-aos="fade-up" data-aos-delay="200">
+              <h3>Progress Reports</h3>
+              <p>
+                Detailed reports shared with parents regularly to keep them
+                informed about their child's academic and personal development.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -299,16 +440,15 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>Ready to Start Your Academic Journey?</h2>
+          <h2>Start Your Child's Educational Journey</h2>
           <p>
-            Join our community of learners and discover the difference quality
-            education makes.
+            Join our community of learners and give your child the foundation
+            for a successful future at AUXANO CRECHE, NURSERY AND PRIMARY
+            SCHOOL.
           </p>
           <div class="cta-actions">
             <a href="admissions.html" class="btn btn-primary">Apply Now</a>
-            <a href="contact.html" class="btn btn-secondary"
-              >Schedule a Visit</a
-            >
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
           </div>
         </div>
       </div>
@@ -318,10 +458,11 @@
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-brand">
-          <h3>Auxano Schools</h3>
+          <h3>AUXANO</h3>
           <p>
             Nurturing excellence and building futures through quality education
-            in Yaba, Lagos.
+            in Yaba, Lagos. Located at 5/7, Lancaster street Onike Sabo Yaba,
+            beside Queen's College Yaba.
           </p>
           <div class="social-links">
             <a href="#" class="social-link"
@@ -329,8 +470,11 @@
             ></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"
-              ><i class="fab fa-linkedin-in"></i
+            <a
+              href="https://wa.me/2349036921072"
+              target="_blank"
+              class="social-link"
+              ><i class="fab fa-whatsapp"></i
             ></a>
           </div>
         </div>
@@ -349,9 +493,9 @@
         <div class="footer-section">
           <h4>Programs</h4>
           <ul class="footer-links">
-            <li><a href="academics.html#early-years">Early Years</a></li>
+            <li><a href="academics.html#early-years">Creche</a></li>
+            <li><a href="academics.html#primary">Nursery</a></li>
             <li><a href="academics.html#primary">Primary School</a></li>
-            <li><a href="academics.html#secondary">Secondary School</a></li>
             <li>
               <a href="academics.html#extracurricular">Extracurricular</a>
             </li>
@@ -361,9 +505,12 @@
         <div class="footer-section">
           <h4>Contact Info</h4>
           <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-            <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-            <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 5/7, Lancaster street Onike
+              Sabo Yaba, beside Queen's College Yaba, Lagos, Nigeria
+            </p>
+            <p><i class="fas fa-phone"></i> +234 903 692 1072</p>
+            <p><i class="fab fa-whatsapp"></i> +234 903 692 1072</p>
             <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
           </div>
         </div>
@@ -371,7 +518,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>&copy; 2024 Auxano Schools. All rights reserved.</p>
+          <p>&copy; 2024 AUXANO. All rights reserved.</p>
           <div class="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Facilities - Auxano Schools</title>
+    <title>Our Facilities - AUXANO</title>
     <meta
       name="description"
-      content="Explore our state-of-the-art facilities at Auxano Schools, Yaba, Lagos - from modern classrooms to sports complexes and technology labs."
+      content="Explore our state-of-the-art facilities at AUXANO CRECHE, NURSERY AND PRIMARY SCHOOL, Yaba, Lagos - Located at 5/7, Lancaster street Onike Sabo Yaba, beside Queen's College Yaba. From modern classrooms to sports complexes and technology labs."
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,53 +19,97 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      /* WhatsApp Chat Button Styles */
+      .whatsapp-chat {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        animation: bounce 2s infinite;
+      }
+
+      .whatsapp-chat a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-chat a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+      }
+
+      .whatsapp-chat i {
+        font-size: 28px;
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .whatsapp-chat {
+          bottom: 15px;
+          right: 15px;
+        }
+
+        .whatsapp-chat a {
+          width: 50px;
+          height: 50px;
+        }
+
+        .whatsapp-chat i {
+          font-size: 24px;
+        }
+      }
+    </style>
   </head>
   <body>
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+      <a
+        href="https://wa.me/2349036921072"
+        target="_blank"
+        title="Chat with us on WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
     <!-- Header -->
     <header class="header" id="header">
       <nav class="nav-container">
         <div class="nav-brand">
           <div class="logo">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="40" height="40" rx="8" fill="url(#gradient)" />
-              <text
-                x="20"
-                y="26"
-                text-anchor="middle"
-                fill="white"
-                font-family="Arial, sans-serif"
-                font-size="16"
-                font-weight="bold"
-              >
-                A
-              </text>
-              <defs>
-                <linearGradient
-                  id="gradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop
-                    offset="0%"
-                    style="stop-color: #22c55e; stop-opacity: 1"
-                  />
-                  <stop
-                    offset="100%"
-                    style="stop-color: #fbbf24; stop-opacity: 1"
-                  />
-                </linearGradient>
-              </defs>
-            </svg>
+            <img
+              src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756311535/auxano_h07ffi.png"
+              alt="AUXANO Logo"
+              width="80"
+              height="80"
+              style="border-radius: 50%; object-fit: cover"
+            />
           </div>
-          <span class="brand-text">Auxano Schools</span>
+          <span class="brand-text">AUXANO</span>
         </div>
 
         <ul class="nav-menu" id="nav-menu">
@@ -117,8 +161,13 @@
         <div class="hero-visual">
           <div class="hero-image-container">
             <div class="hero-image-placeholder">
-              <div class="placeholder-icon">🏫</div>
-              <p>School Facilities</p>
+              <img
+                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756313040/world_nsskg5.jpg"
+                alt="World-Class Facilities"
+                width="100%"
+                height="100%"
+                style="border-radius: 10px; object-fit: cover"
+              />
             </div>
           </div>
         </div>
@@ -435,10 +484,11 @@
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-brand">
-          <h3>Auxano Schools</h3>
+          <h3>AUXANO</h3>
           <p>
             Nurturing excellence and building futures through quality education
-            in Yaba, Lagos.
+            in Yaba, Lagos. Located at 5/7, Lancaster street Onike Sabo Yaba,
+            beside Queen's College Yaba.
           </p>
           <div class="social-links">
             <a href="#" class="social-link"
@@ -446,8 +496,11 @@
             ></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"
-              ><i class="fab fa-linkedin-in"></i
+            <a
+              href="https://wa.me/2349036921072"
+              target="_blank"
+              class="social-link"
+              ><i class="fab fa-whatsapp"></i
             ></a>
           </div>
         </div>
@@ -466,9 +519,9 @@
         <div class="footer-section">
           <h4>Programs</h4>
           <ul class="footer-links">
-            <li><a href="academics.html#early-years">Early Years</a></li>
+            <li><a href="academics.html#early-years">Creche</a></li>
+            <li><a href="academics.html#primary">Nursery</a></li>
             <li><a href="academics.html#primary">Primary School</a></li>
-            <li><a href="academics.html#secondary">Secondary School</a></li>
             <li>
               <a href="academics.html#extracurricular">Extracurricular</a>
             </li>
@@ -478,9 +531,12 @@
         <div class="footer-section">
           <h4>Contact Info</h4>
           <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> Yaba, Lagos, Nigeria</p>
-            <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
-            <p><i class="fas fa-envelope"></i> info@auxanoschools.edu.ng</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 5/7, Lancaster street Onike
+              Sabo Yaba, beside Queen's College Yaba, Lagos, Nigeria
+            </p>
+            <p><i class="fas fa-phone"></i> +234 903 692 1072</p>
+            <p><i class="fab fa-whatsapp"></i> +234 903 692 1072</p>
             <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</p>
           </div>
         </div>
@@ -488,7 +544,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>&copy; 2024 Auxano Schools. All rights reserved.</p>
+          <p>&copy; 2024 AUXANO. All rights reserved.</p>
           <div class="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
